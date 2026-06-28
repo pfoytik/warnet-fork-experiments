@@ -1,0 +1,90 @@
+# Price Model Configuration
+# Used by price_oracle.py for dynamic fork price modeling
+# Updated: 2026-01-25 - Added sustained fork detection
+
+price_model:
+  # Enable/disable price model
+  enabled: true
+
+  # Base price for both chains at start (USD)
+  base_price: 60000
+
+  # Maximum allowed price divergence (0.20 = ±20%)
+  max_divergence: 0.20
+
+  # How often to update prices (seconds)
+  update_interval: 60
+
+  # Sustained fork detection
+  # Only sustained forks create separate token valuations
+  # Natural chain splits (common in Bitcoin) resolve quickly and don't create new tokens
+  sustained_fork_detection:
+    enabled: true
+    min_fork_depth: 6        # Minimum total blocks on both chains since split
+                             # Example: fork_a has 3 blocks, fork_b has 3 blocks = depth 6
+                             # This matches Bitcoin's "6 confirmations" security model
+
+    # Note: We do NOT use time_elapsed for fast scenario testing
+    # In production, you might add: min_fork_time: 3600 (1 hour)
+
+  # Factor coefficients (must sum to 1.0)
+  # These determine what influences price
+  coefficients:
+    # Chain weight: Block production rate (blocks behind = sell pressure)
+    chain_weight: 0.3
+
+    # Economic weight: Custody + volume concentration (buying support)
+    economic_weight: 0.5
+
+    # Hashrate weight: Security premium for higher hashrate
+    hashrate_weight: 0.2
+
+  # Storage path for price history (optional)
+  # If not specified, prices stored in memory only
+  storage_path: null
+
+# Alternative configurations for testing
+
+# Configuration A: Economic-dominant (custody/volume drive price)
+economic_dominant:
+  enabled: true
+  base_price: 60000
+  max_divergence: 0.20
+  update_interval: 60
+  coefficients:
+    chain_weight: 0.1
+    economic_weight: 0.7
+    hashrate_weight: 0.2
+
+# Configuration B: Hashrate-dominant (security drives price)
+hashrate_dominant:
+  enabled: true
+  base_price: 60000
+  max_divergence: 0.20
+  update_interval: 60
+  coefficients:
+    chain_weight: 0.2
+    economic_weight: 0.2
+    hashrate_weight: 0.6
+
+# Configuration C: Balanced (all factors equal)
+balanced:
+  enabled: true
+  base_price: 60000
+  max_divergence: 0.20
+  update_interval: 60
+  coefficients:
+    chain_weight: 0.33
+    economic_weight: 0.34
+    hashrate_weight: 0.33
+
+# Configuration D: High divergence (allow large price differences)
+high_divergence:
+  enabled: true
+  base_price: 60000
+  max_divergence: 0.40  # ±40%
+  update_interval: 60
+  coefficients:
+    chain_weight: 0.3
+    economic_weight: 0.5
+    hashrate_weight: 0.2

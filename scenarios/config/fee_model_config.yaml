@@ -1,0 +1,79 @@
+# Fee Market Model Configuration
+# Phase 2: Fee Market Dynamics
+# Created: 2026-01-25
+
+# Base fee parameters (sat/vB)
+base_fee_rate: 2.0
+min_fee_rate: 1.0
+max_fee_rate: 500.0
+
+# Organic fee calculation weights
+organic_fee_weights:
+  block_production_factor: 0.4    # Impact of block production rate (slower = higher fees)
+  economic_activity_factor: 0.3   # Impact of economic activity level
+  mempool_pressure_factor: 0.3    # Impact of transaction volume
+
+# Block production thresholds (seconds)
+block_production:
+  target_interval: 600              # 10 minutes in seconds
+  slow_threshold: 900              # 15 minutes - considered slow
+  fast_threshold: 300              # 5 minutes - considered fast
+  max_fee_multiplier: 10.0         # Maximum fee multiplier for very slow blocks
+
+# Economic activity levels
+economic_activity:
+  high_threshold: 0.7              # > 70% economic weight = high activity
+  low_threshold: 0.3               # < 30% economic weight = low activity
+  high_multiplier: 1.5             # Fee multiplier for high activity
+  low_multiplier: 0.8              # Fee multiplier for low activity
+
+# Mempool pressure (transactions per block)
+mempool_pressure:
+  normal_tx_count: 2000            # Normal transaction count per block
+  high_pressure_threshold: 3000    # High pressure threshold
+  low_pressure_threshold: 1000     # Low pressure threshold
+  pressure_sensitivity: 0.5        # How much fees respond to pressure
+
+# Manipulation detection
+manipulation:
+  min_detectable_premium: 10.0     # Minimum premium (sat/vB) to flag as manipulation
+  sustainability_threshold: 1.0    # Sustainability ratio threshold (< 1.0 = unsustainable)
+  warning_threshold: 1.5           # Warning threshold (< 1.5 = risky)
+
+# Miner economics
+miner:
+  block_subsidy: 3.125             # Current block subsidy (BTC) - post-2024 halving
+  hashrate_cost_usd: 100000.0      # Cost to mine one block (USD)
+  electricity_cost_factor: 0.6     # Portion of cost that is electricity
+  hardware_cost_factor: 0.4        # Portion of cost that is hardware
+
+# Portfolio tracking
+portfolio:
+  snapshot_interval: 600           # Record portfolio every 10 minutes (seconds)
+  initial_holdings_btc: 100000.0   # Default initial holdings for actors
+  warning_loss_threshold: 0.05     # Warn if portfolio loses > 5%
+  critical_loss_threshold: 0.10    # Critical if portfolio loses > 10%
+
+# Scenario defaults
+scenario:
+  update_interval: 60              # Update fees every 60 seconds
+  manipulation_budget_btc: 1.0     # Default manipulation spending per interval
+  target_fee_premium: 100.0        # Target fee premium (sat/vB) for manipulation
+  enable_dynamic_adjustment: true  # Allow fees to adjust dynamically based on conditions
+
+# Export settings
+export:
+  enabled: true
+  format: "json"
+  include_portfolio_snapshots: true
+  include_miner_profitability: true
+  include_sustainability_metrics: true
+  export_interval: 600             # Export every 10 minutes
+
+# Logging
+logging:
+  level: "INFO"                    # DEBUG, INFO, WARNING, ERROR
+  log_fee_updates: true
+  log_manipulation_events: true
+  log_sustainability_warnings: true
+  log_portfolio_snapshots: false   # Can be verbose

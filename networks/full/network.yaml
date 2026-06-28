@@ -1,0 +1,1760 @@
+# Realistic Bitcoin Economy Network v2
+#
+# A comprehensive network model representing the Bitcoin ecosystem with
+# realistic distributions of mining pools, exchanges, institutions, and users.
+#
+# Calibrated against real-world data (Feb 2026):
+# - Node counts: bitnodes.io (~25,140 reachable, ~1:400 scale factor)
+# - Mining hashrate: mempool.space/mining, hashrateindex.com
+# - Exchange custody: Proof-of-reserves, defillama.com/cexs
+# - Institutional holdings: bitcointreasuries.net
+#
+# Total: 60 nodes
+# - Mining Pools: 8 (13%) - Tier 1, individual representation
+# - Major Exchanges: 4 (7%) - Tier 1, individual representation
+# - Mid-tier Exchanges: 6 (10%) - Tier 1, individual representation
+# - Payment Processors: 3 (5%) - Tier 1, individual representation
+# - Merchants: 6 (10%) - Tier 1, individual representation
+# - Institutional Holders: 5 (8%) - Tier 1, individual representation
+# - Power Users: 12 (20%) - Tier 2, ~400 participants each
+# - Casual Users: 16 (27%) - Tier 2, ~1,250 participants each
+#
+# Hashrate Coverage (calibrated Feb 2026 from mempool.space/mining):
+# - Named pools: 86.4% (top 8 by blocks found)
+# - User nodes (Tier 2 cohorts): 11.75% (solo miners, small pools, variance)
+# - Measurement variance: ~1.85% (solo miners who haven't found blocks recently)
+# - Total: ~100%
+#
+# Partition: 30 nodes v27, 30 nodes v26
+# Fork preferences are configurable per test scenario
+
+caddy:
+  enabled: true
+fork_observer:
+  enabled: false
+  configQueryInterval: 10
+
+nodes:
+# =============================================================================
+# V27 PARTITION (nodes 0-29)
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# MINING POOLS (4 on v27) - Tier 1: Individual representation
+# Total v27 pool hashrate: 38.1%
+# -----------------------------------------------------------------------------
+- name: node-0000
+  image:
+    tag: '27.0'
+  bitcoin_config:
+    maxconnections: 125
+    maxmempool: 300
+    txindex: 1
+  metadata:
+    role: mining_pool
+    pool_name: Foundry USA
+    node_type: mining_pool
+    entity_id: pool-foundryusa
+    representation_tier: 1
+    hashrate_pct: 30.0
+    custody_btc: 50000
+    daily_volume_btc: 5000
+    fork_preference: v27
+    ideology_strength: 0.95
+    profitability_threshold: 0.25
+    max_loss_pct: 0.50
+    accepts_foreign_blocks: false
+  addnode:
+  - node-0001
+  - node-0004
+  - node-0008
+
+- name: node-0001
+  image:
+    tag: '27.0'
+  bitcoin_config:
+    maxconnections: 100
+    maxmempool: 300
+  metadata:
+    role: mining_pool
+    pool_name: MARA Pool
+    node_type: mining_pool
+    entity_id: pool-marapool
+    representation_tier: 1
+    hashrate_pct: 4.6
+    custody_btc: 15000
+    daily_volume_btc: 1500
+    fork_preference: v27
+    ideology_strength: 0.70
+    profitability_threshold: 0.15
+    max_loss_pct: 0.30
+    accepts_foreign_blocks: false
+  addnode:
+  - node-0000
+  - node-0002
+
+- name: node-0002
+  image:
+    tag: '27.0'
+  bitcoin_config:
+    maxconnections: 100
+    maxmempool: 300
+  metadata:
+    role: mining_pool
+    pool_name: Luxor
+    node_type: mining_pool
+    entity_id: pool-luxor
+    representation_tier: 1
+    hashrate_pct: 2.3
+    custody_btc: 8000
+    daily_volume_btc: 800
+    fork_preference: v27
+    ideology_strength: 0.65
+    profitability_threshold: 0.12
+    max_loss_pct: 0.25
+    accepts_foreign_blocks: false
+  addnode:
+  - node-0001
+  - node-0003
+
+- name: node-0003
+  image:
+    tag: '27.0'
+  bitcoin_config:
+    maxconnections: 100
+    maxmempool: 300
+  metadata:
+    role: mining_pool
+    pool_name: Ocean
+    node_type: mining_pool
+    entity_id: pool-ocean
+    representation_tier: 1
+    hashrate_pct: 1.2
+    custody_btc: 5000
+    daily_volume_btc: 500
+    fork_preference: v27
+    ideology_strength: 0.85
+    profitability_threshold: 0.20
+    max_loss_pct: 0.40
+    accepts_foreign_blocks: false
+  addnode:
+  - node-0002
+  - node-0004
+
+# -----------------------------------------------------------------------------
+# MAJOR EXCHANGES (2 on v27) - Tier 1: Individual representation
+# -----------------------------------------------------------------------------
+- name: node-0004
+  image:
+    tag: '27.0'
+  bitcoin_config:
+    maxconnections: 125
+    maxmempool: 500
+    txindex: 1
+  metadata:
+    role: major_exchange
+    exchange_name: Coinbase
+    node_type: economic
+    entity_id: exchange-coinbase
+    representation_tier: 1
+    hashrate_pct: 0.0
+    custody_btc: 1000000
+    daily_volume_btc: 150000
+    fork_preference: neutral
+    ideology_strength: 0.10
+    switching_threshold: 0.03
+    inertia: 0.20
+    max_loss_pct: 0.05
+    activity_type: transactional
+    transaction_velocity: 0.8
+    accepts_foreign_blocks: false
+  addnode:
+  - node-0000
+  - node-0005
+  - node-0008
+
+- name: node-0005
+  image:
+    tag: '27.0'
+  bitcoin_config:
+    maxconnections: 125
+    maxmempool: 500
+    txindex: 1
+  metadata:
+    role: major_exchange
+    exchange_name: Kraken
+    node_type: economic
+    entity_id: exchange-kraken
+    representation_tier: 1
+    hashrate_pct: 0.0
+    custody_btc: 600000
+    daily_volume_btc: 80000
+    fork_preference: neutral
+    ideology_strength: 0.15
+    switching_threshold: 0.04
+    inertia: 0.18
+    max_loss_pct: 0.06
+    activity_type: transactional
+    transaction_velocity: 0.75
+    accepts_foreign_blocks: false
+  addnode:
+  - node-0004
+  - node-0006
+
+# -----------------------------------------------------------------------------
+# MID-TIER EXCHANGES (3 on v27) - Tier 1: Individual representation
+# -----------------------------------------------------------------------------
+- name: node-0006
+  image:
+    tag: '27.0'
+  bitcoin_config:
+    maxconnections: 75
+    maxmempool: 300
+  metadata:
+    role: exchange
+    exchange_name: Gemini
+    node_type: economic
+    entity_id: exchange-gemini
+    representation_tier: 1
+    hashrate_pct: 0.0
+    custody_btc: 200000
+    daily_volume_btc: 25000
+    fork_preference: v27
+    ideology_strength: 0.30
+    switching_threshold: 0.05
+    inertia: 0.15
+    max_loss_pct: 0.10
+    activity_type: transactional
+    transaction_velocity: 0.7
+    accepts_foreign_blocks: false
+  addnode:
+  - node-0005
+  - node-0007
+
+- name: node-0007
+  image:
+    tag: '27.0'
+  bitcoin_config:
+    maxconnections: 75
+    maxmempool: 300
+  metadata:
+    role: exchange
+    exchange_name: River
+    node_type: economic
+    entity_id: exchange-river
+    representation_tier: 1
+    hashrate_pct: 0.0
+    custody_btc: 80000
+    daily_volume_btc: 10000
+    fork_preference: v27
+    ideology_strength: 0.50
+    switching_threshold: 0.08
+    inertia: 0.12
+    max_loss_pct: 0.15
+    activity_type: transactional
+    transaction_velocity: 0.6
+    accepts_foreign_blocks: false
+  addnode:
+  - node-0006
+  - node-0008
+
+- name: node-0008
+  image:
+    tag: '27.0'
+  bitcoin_config:
+    maxconnections: 75
+    maxmempool: 300
+  metadata:
+    role: exchange
+    exchange_name: Swan Bitcoin
+    node_type: economic
+    entity_id: exchange-swan
+    representation_tier: 1
+    hashrate_pct: 0.0
+    custody_btc: 50000
+    daily_volume_btc: 8000
+    fork_preference: v27
+    ideology_strength: 0.60
+    switching_threshold: 0.10
+    inertia: 0.10
+    max_loss_pct: 0.20
+    activity_type: transactional
+    transaction_velocity: 0.5
+    accepts_foreign_blocks: false
+  addnode:
+  - node-0007
+  - node-0009
+
+# -----------------------------------------------------------------------------
+# PAYMENT PROCESSORS (2 on v27) - Tier 1: Individual representation
+# -----------------------------------------------------------------------------
+- name: node-0009
+  image:
+    tag: '27.0'
+  bitcoin_config:
+    maxconnections: 50
+    maxmempool: 200
+  metadata:
+    role: payment_processor
+    company_name: BTCPay Server (aggregated)
+    node_type: economic
+    entity_id: payment-btcpay
+    representation_tier: 1
+    hashrate_pct: 0.0
+    custody_btc: 5000
+    daily_volume_btc: 15000
+    fork_preference: v27
+    ideology_strength: 0.75
+    switching_threshold: 0.12
+    inertia: 0.08
+    max_loss_pct: 0.25
+    activity_type: transactional
+    transaction_velocity: 0.9
+    accepts_foreign_blocks: false
+  addnode:
+  - node-0008
+  - node-0010
+
+- name: node-0010
+  image:
+    tag: '27.0'
+  bitcoin_config:
+    maxconnections: 50
+    maxmempool: 200
+  metadata:
+    role: payment_processor
+    company_name: OpenNode
+    node_type: economic
+    entity_id: payment-opennode
+    representation_tier: 1
+    hashrate_pct: 0.0
+    custody_btc: 3000
+    daily_volume_btc: 5000
+    fork_preference: v27
+    ideology_strength: 0.65
+    switching_threshold: 0.10
+    inertia: 0.10
+    max_loss_pct: 0.20
+    activity_type: transactional
+    transaction_velocity: 0.85
+    accepts_foreign_blocks: false
+  addnode:
+  - node-0009
+  - node-0011
+
+# -----------------------------------------------------------------------------
+# MERCHANTS (3 on v27) - Tier 1: Individual representation
+# -----------------------------------------------------------------------------
+- name: node-0011
+  image:
+    tag: '27.0'
+  bitcoin_config:
+    maxconnections: 25
+    maxmempool: 150
+  metadata:
+    role: merchant
+    company_name: Tech Retailer (aggregated)
+    node_type: economic
+    entity_id: merchant-tech
+    representation_tier: 1
+    hashrate_pct: 0.0
+    custody_btc: 500
+    daily_volume_btc: 200
+    fork_preference: v27
+    ideology_strength: 0.40
+    switching_threshold: 0.06
+    inertia: 0.15
+    max_loss_pct: 0.10
+    activity_type: transactional
+    transaction_velocity: 0.7
+    accepts_foreign_blocks: false
+  addnode:
+  - node-0010
+  - node-0012
+
+- name: node-0012
+  image:
+    tag: '27.0'
+  bitcoin_config:
+    maxconnections: 25
+    maxmempool: 150
+  metadata:
+    role: merchant
+    company_name: E-commerce Platform
+    node_type: economic
+    entity_id: merchant-ecom
+    representation_tier: 1
+    hashrate_pct: 0.0
+    custody_btc: 300
+    daily_volume_btc: 150
+    fork_preference: neutral
+    ideology_strength: 0.20
+    switching_threshold: 0.05
+    inertia: 0.12
+    max_loss_pct: 0.08
+    activity_type: transactional
+    transaction_velocity: 0.65
+    accepts_foreign_blocks: false
+  addnode:
+  - node-0011
+  - node-0013
+
+- name: node-0013
+  image:
+    tag: '27.0'
+  bitcoin_config:
+    maxconnections: 25
+    maxmempool: 150
+  metadata:
+    role: merchant
+    company_name: Travel Agency
+    node_type: economic
+    entity_id: merchant-travel
+    representation_tier: 1
+    hashrate_pct: 0.0
+    custody_btc: 200
+    daily_volume_btc: 100
+    fork_preference: v27
+    ideology_strength: 0.35
+    switching_threshold: 0.07
+    inertia: 0.10
+    max_loss_pct: 0.12
+    activity_type: transactional
+    transaction_velocity: 0.5
+    accepts_foreign_blocks: false
+  addnode:
+  - node-0012
+  - node-0014
+
+# -----------------------------------------------------------------------------
+# INSTITUTIONAL HOLDERS (3 on v27) - Tier 1: Individual representation
+# -----------------------------------------------------------------------------
+- name: node-0014
+  image:
+    tag: '27.0'
+  bitcoin_config:
+    maxconnections: 50
+    maxmempool: 200
+  metadata:
+    role: institutional
+    company_name: MicroStrategy
+    node_type: economic
+    entity_id: inst-microstrategy
+    representation_tier: 1
+    hashrate_pct: 0.0
+    # Note: MicroStrategy has continued accumulating; current holdings likely higher
+    custody_btc: 190000
+    daily_volume_btc: 500
+    fork_preference: v27
+    ideology_strength: 0.85
+    switching_threshold: 0.15
+    inertia: 0.25
+    max_loss_pct: 0.30
+    activity_type: custody
+    transaction_velocity: 0.05
+    accepts_foreign_blocks: false
+  addnode:
+  - node-0013
+  - node-0015
+
+- name: node-0015
+  image:
+    tag: '27.0'
+  bitcoin_config:
+    maxconnections: 50
+    maxmempool: 200
+  metadata:
+    role: institutional
+    company_name: Tesla
+    node_type: economic
+    entity_id: inst-tesla
+    representation_tier: 1
+    hashrate_pct: 0.0
+    custody_btc: 10000
+    daily_volume_btc: 100
+    fork_preference: neutral
+    ideology_strength: 0.20
+    switching_threshold: 0.05
+    inertia: 0.20
+    max_loss_pct: 0.10
+    activity_type: custody
+    transaction_velocity: 0.02
+    accepts_foreign_blocks: false
+  addnode:
+  - node-0014
+  - node-0016
+
+- name: node-0016
+  image:
+    tag: '27.0'
+  bitcoin_config:
+    maxconnections: 50
+    maxmempool: 200
+  metadata:
+    role: institutional
+    company_name: Block Inc
+    node_type: economic
+    entity_id: inst-block
+    representation_tier: 1
+    hashrate_pct: 0.0
+    custody_btc: 8000
+    daily_volume_btc: 200
+    fork_preference: v27
+    ideology_strength: 0.70
+    switching_threshold: 0.12
+    inertia: 0.15
+    max_loss_pct: 0.25
+    activity_type: custody
+    transaction_velocity: 0.08
+    accepts_foreign_blocks: false
+  addnode:
+  - node-0015
+  - node-0017
+
+# -----------------------------------------------------------------------------
+# POWER USERS (6 on v27) - Tier 2: ~400 participants each
+# Hashrate values updated per documentation
+# custody_btc is individual-scale; multiply by represents_count for cohort weight
+# -----------------------------------------------------------------------------
+- name: node-0017
+  image:
+    tag: '27.0'
+  bitcoin_config:
+    maxconnections: 50
+    maxmempool: 200
+  metadata:
+    role: power_user
+    user_type: Developer
+    node_type: user
+    entity_id: user-dev-001
+    representation_tier: 2
+    represents_count: 400
+    # Hashrate: 0.45% of network (aggregated dev/test mining)
+    hashrate_pct: 0.45
+    custody_btc: 100
+    daily_volume_btc: 5
+    fork_preference: v27
+    ideology_strength: 0.90
+    switching_threshold: 0.20
+    inertia: 0.05
+    max_loss_pct: 0.40
+    activity_type: mixed
+    transaction_velocity: 0.3
+    accepts_foreign_blocks: false
+  addnode:
+  - node-0016
+  - node-0018
+
+- name: node-0018
+  image:
+    tag: '27.0'
+  bitcoin_config:
+    maxconnections: 50
+    maxmempool: 200
+  metadata:
+    role: power_user
+    user_type: Node Runner
+    node_type: user
+    entity_id: user-node-001
+    representation_tier: 2
+    represents_count: 400
+    # Hashrate: 0.65% (some node runners also run ASICs)
+    hashrate_pct: 0.65
+    custody_btc: 50
+    daily_volume_btc: 2
+    fork_preference: v27
+    ideology_strength: 0.85
+    switching_threshold: 0.18
+    inertia: 0.05
+    max_loss_pct: 0.35
+    activity_type: custody
+    transaction_velocity: 0.1
+    accepts_foreign_blocks: false
+  addnode:
+  - node-0017
+  - node-0019
+
+- name: node-0019
+  image:
+    tag: '27.0'
+  bitcoin_config:
+    maxconnections: 50
+    maxmempool: 200
+  metadata:
+    role: power_user
+    user_type: Bitcoin Educator
+    node_type: user
+    entity_id: user-edu-001
+    representation_tier: 2
+    represents_count: 400
+    # Hashrate: 0.20% (small home mining for education)
+    hashrate_pct: 0.20
+    custody_btc: 25
+    daily_volume_btc: 3
+    fork_preference: v27
+    ideology_strength: 0.80
+    switching_threshold: 0.15
+    inertia: 0.08
+    max_loss_pct: 0.30
+    activity_type: mixed
+    transaction_velocity: 0.25
+    accepts_foreign_blocks: false
+  addnode:
+  - node-0018
+  - node-0020
+
+- name: node-0020
+  image:
+    tag: '27.0'
+  bitcoin_config:
+    maxconnections: 50
+    maxmempool: 200
+  metadata:
+    role: power_user
+    user_type: Active Trader
+    node_type: user
+    entity_id: user-trader-001
+    representation_tier: 2
+    represents_count: 400
+    hashrate_pct: 0.0
+    custody_btc: 200
+    daily_volume_btc: 50
+    fork_preference: neutral
+    ideology_strength: 0.15
+    switching_threshold: 0.03
+    inertia: 0.05
+    max_loss_pct: 0.05
+    activity_type: transactional
+    transaction_velocity: 0.8
+    accepts_foreign_blocks: false
+  addnode:
+  - node-0019
+  - node-0021
+
+- name: node-0021
+  image:
+    tag: '27.0'
+  bitcoin_config:
+    maxconnections: 50
+    maxmempool: 200
+  metadata:
+    role: power_user
+    user_type: Mining Hobbyist
+    node_type: user
+    entity_id: user-miner-001
+    representation_tier: 2
+    represents_count: 400
+    # Hashrate: 1.10% (home ASIC mining cohort)
+    hashrate_pct: 1.10
+    custody_btc: 15
+    daily_volume_btc: 1
+    fork_preference: v27
+    ideology_strength: 0.75
+    switching_threshold: 0.12
+    inertia: 0.10
+    max_loss_pct: 0.25
+    activity_type: mixed
+    transaction_velocity: 0.15
+    accepts_foreign_blocks: false
+  addnode:
+  - node-0020
+  - node-0022
+
+- name: node-0022
+  image:
+    tag: '27.0'
+  bitcoin_config:
+    maxconnections: 50
+    maxmempool: 200
+  metadata:
+    role: power_user
+    user_type: Privacy Advocate
+    node_type: user
+    entity_id: user-privacy-001
+    representation_tier: 2
+    represents_count: 400
+    # Hashrate: 0.45% (solo mining for censorship resistance)
+    hashrate_pct: 0.45
+    custody_btc: 30
+    daily_volume_btc: 2
+    fork_preference: v27
+    ideology_strength: 0.88
+    switching_threshold: 0.22
+    inertia: 0.05
+    max_loss_pct: 0.45
+    activity_type: mixed
+    transaction_velocity: 0.2
+    accepts_foreign_blocks: false
+  addnode:
+  - node-0021
+  - node-0023
+
+# -----------------------------------------------------------------------------
+# CASUAL USERS (8 on v27) - Tier 2: ~1,250 participants each
+# custody_btc is individual-scale; multiply by represents_count for cohort weight
+# Example: HODLer with 10 BTC individual = 12,500 BTC cohort weight
+# -----------------------------------------------------------------------------
+- name: node-0023
+  image:
+    tag: '27.0'
+  bitcoin_config:
+    maxconnections: 20
+    maxmempool: 100
+  metadata:
+    role: casual_user
+    user_type: Long-term HODLer
+    node_type: user
+    entity_id: user-hodl-001
+    representation_tier: 2
+    represents_count: 1250
+    hashrate_pct: 0.0
+    # Individual: 10 BTC; Cohort: 12,500 BTC
+    custody_btc: 10
+    daily_volume_btc: 0.01
+    fork_preference: v27
+    ideology_strength: 0.70
+    switching_threshold: 0.15
+    inertia: 0.20
+    max_loss_pct: 0.30
+    activity_type: custody
+    transaction_velocity: 0.01
+    accepts_foreign_blocks: false
+  addnode:
+  - node-0022
+  - node-0024
+
+- name: node-0024
+  image:
+    tag: '27.0'
+  bitcoin_config:
+    maxconnections: 20
+    maxmempool: 100
+  metadata:
+    role: casual_user
+    user_type: DCA Investor
+    node_type: user
+    entity_id: user-dca-001
+    representation_tier: 2
+    represents_count: 1250
+    hashrate_pct: 0.0
+    # Individual: 5 BTC; Cohort: 6,250 BTC
+    custody_btc: 5
+    daily_volume_btc: 0.05
+    fork_preference: neutral
+    ideology_strength: 0.30
+    switching_threshold: 0.08
+    inertia: 0.15
+    max_loss_pct: 0.12
+    activity_type: mixed
+    transaction_velocity: 0.05
+    accepts_foreign_blocks: false
+  addnode:
+  - node-0023
+  - node-0025
+
+- name: node-0025
+  image:
+    tag: '27.0'
+  bitcoin_config:
+    maxconnections: 20
+    maxmempool: 100
+  metadata:
+    role: casual_user
+    user_type: Occasional Spender
+    node_type: user
+    entity_id: user-spend-001
+    representation_tier: 2
+    represents_count: 1250
+    hashrate_pct: 0.0
+    # Individual: 2 BTC; Cohort: 2,500 BTC
+    custody_btc: 2
+    daily_volume_btc: 0.1
+    fork_preference: neutral
+    ideology_strength: 0.15
+    switching_threshold: 0.05
+    inertia: 0.10
+    max_loss_pct: 0.08
+    activity_type: transactional
+    transaction_velocity: 0.3
+    accepts_foreign_blocks: false
+  addnode:
+  - node-0024
+  - node-0026
+
+- name: node-0026
+  image:
+    tag: '27.0'
+  bitcoin_config:
+    maxconnections: 20
+    maxmempool: 100
+  metadata:
+    role: casual_user
+    user_type: Newbie
+    node_type: user
+    entity_id: user-new-001
+    representation_tier: 2
+    represents_count: 1250
+    hashrate_pct: 0.0
+    # Individual: 0.5 BTC; Cohort: 625 BTC
+    custody_btc: 0.5
+    daily_volume_btc: 0.02
+    fork_preference: neutral
+    ideology_strength: 0.05
+    switching_threshold: 0.03
+    inertia: 0.05
+    max_loss_pct: 0.05
+    activity_type: mixed
+    transaction_velocity: 0.15
+    accepts_foreign_blocks: false
+  addnode:
+  - node-0025
+  - node-0027
+
+- name: node-0027
+  image:
+    tag: '27.0'
+  bitcoin_config:
+    maxconnections: 20
+    maxmempool: 100
+  metadata:
+    role: casual_user
+    user_type: Remittance User
+    node_type: user
+    entity_id: user-remit-001
+    representation_tier: 2
+    represents_count: 1250
+    hashrate_pct: 0.0
+    # Individual: 0.2 BTC; Cohort: 250 BTC
+    custody_btc: 0.2
+    daily_volume_btc: 0.5
+    fork_preference: neutral
+    ideology_strength: 0.10
+    switching_threshold: 0.04
+    inertia: 0.08
+    max_loss_pct: 0.06
+    activity_type: transactional
+    transaction_velocity: 0.7
+    accepts_foreign_blocks: false
+  addnode:
+  - node-0026
+  - node-0028
+
+- name: node-0028
+  image:
+    tag: '27.0'
+  bitcoin_config:
+    maxconnections: 20
+    maxmempool: 100
+  metadata:
+    role: casual_user
+    user_type: Savings Account
+    node_type: user
+    entity_id: user-save-001
+    representation_tier: 2
+    represents_count: 1250
+    hashrate_pct: 0.0
+    # Individual: 3 BTC; Cohort: 3,750 BTC
+    custody_btc: 3
+    daily_volume_btc: 0.01
+    fork_preference: v27
+    ideology_strength: 0.45
+    switching_threshold: 0.10
+    inertia: 0.18
+    max_loss_pct: 0.15
+    activity_type: custody
+    transaction_velocity: 0.02
+    accepts_foreign_blocks: false
+  addnode:
+  - node-0027
+  - node-0029
+
+- name: node-0029
+  image:
+    tag: '27.0'
+  bitcoin_config:
+    maxconnections: 20
+    maxmempool: 100
+  metadata:
+    role: casual_user
+    user_type: Gift Recipient
+    node_type: user
+    entity_id: user-gift-001
+    representation_tier: 2
+    represents_count: 1250
+    hashrate_pct: 0.0
+    # Individual: 0.1 BTC; Cohort: 125 BTC
+    custody_btc: 0.1
+    daily_volume_btc: 0.005
+    fork_preference: neutral
+    ideology_strength: 0.02
+    switching_threshold: 0.02
+    inertia: 0.03
+    max_loss_pct: 0.03
+    activity_type: custody
+    transaction_velocity: 0.05
+    accepts_foreign_blocks: false
+  addnode:
+  - node-0028
+
+# =============================================================================
+# V26 PARTITION (nodes 30-59)
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# MINING POOLS (4 on v26) - Tier 1: Individual representation
+# Total v26 pool hashrate: 48.3%
+# -----------------------------------------------------------------------------
+- name: node-0030
+  image:
+    tag: '26.0'
+  bitcoin_config:
+    maxconnections: 125
+    maxmempool: 300
+    txindex: 1
+  metadata:
+    role: mining_pool
+    pool_name: AntPool
+    node_type: mining_pool
+    entity_id: pool-antpool
+    representation_tier: 1
+    hashrate_pct: 16.9
+    custody_btc: 40000
+    daily_volume_btc: 4000
+    fork_preference: v26
+    ideology_strength: 0.65
+    profitability_threshold: 0.18
+    max_loss_pct: 0.40
+    accepts_foreign_blocks: true
+  addnode:
+  - node-0031
+  - node-0034
+  - node-0038
+
+- name: node-0031
+  image:
+    tag: '26.0'
+  bitcoin_config:
+    maxconnections: 100
+    maxmempool: 300
+  metadata:
+    role: mining_pool
+    pool_name: F2Pool
+    node_type: mining_pool
+    entity_id: pool-f2pool
+    representation_tier: 1
+    hashrate_pct: 10.9
+    custody_btc: 25000
+    daily_volume_btc: 2500
+    fork_preference: v26
+    ideology_strength: 0.55
+    profitability_threshold: 0.12
+    max_loss_pct: 0.28
+    accepts_foreign_blocks: true
+  addnode:
+  - node-0030
+  - node-0032
+
+- name: node-0032
+  image:
+    tag: '26.0'
+  bitcoin_config:
+    maxconnections: 100
+    maxmempool: 300
+  metadata:
+    role: mining_pool
+    pool_name: ViaBTC
+    node_type: mining_pool
+    entity_id: pool-viabtc
+    representation_tier: 1
+    hashrate_pct: 11.2
+    custody_btc: 22000
+    daily_volume_btc: 2200
+    fork_preference: v26
+    ideology_strength: 0.60
+    profitability_threshold: 0.15
+    max_loss_pct: 0.35
+    accepts_foreign_blocks: true
+  addnode:
+  - node-0031
+  - node-0033
+
+- name: node-0033
+  image:
+    tag: '26.0'
+  bitcoin_config:
+    maxconnections: 100
+    maxmempool: 300
+  metadata:
+    role: mining_pool
+    pool_name: SpiderPool
+    node_type: mining_pool
+    entity_id: pool-spiderpool
+    representation_tier: 1
+    hashrate_pct: 9.3
+    custody_btc: 15000
+    daily_volume_btc: 1500
+    fork_preference: v26
+    ideology_strength: 0.40
+    profitability_threshold: 0.08
+    max_loss_pct: 0.18
+    accepts_foreign_blocks: true
+  addnode:
+  - node-0032
+  - node-0034
+
+# -----------------------------------------------------------------------------
+# MAJOR EXCHANGES (2 on v26) - Tier 1: Individual representation
+# -----------------------------------------------------------------------------
+- name: node-0034
+  image:
+    tag: '26.0'
+  bitcoin_config:
+    maxconnections: 125
+    maxmempool: 500
+    txindex: 1
+  metadata:
+    role: major_exchange
+    exchange_name: Binance
+    node_type: economic
+    entity_id: exchange-binance
+    representation_tier: 1
+    hashrate_pct: 0.0
+    # Note: PoR shows ~575K; includes affiliated entities
+    custody_btc: 1500000
+    daily_volume_btc: 250000
+    fork_preference: neutral
+    ideology_strength: 0.05
+    switching_threshold: 0.02
+    inertia: 0.22
+    max_loss_pct: 0.04
+    activity_type: transactional
+    transaction_velocity: 0.85
+    accepts_foreign_blocks: true
+  addnode:
+  - node-0030
+  - node-0035
+  - node-0038
+
+- name: node-0035
+  image:
+    tag: '26.0'
+  bitcoin_config:
+    maxconnections: 125
+    maxmempool: 500
+    txindex: 1
+  metadata:
+    role: major_exchange
+    exchange_name: Bitfinex
+    node_type: economic
+    entity_id: exchange-bitfinex
+    representation_tier: 1
+    hashrate_pct: 0.0
+    custody_btc: 400000
+    daily_volume_btc: 60000
+    fork_preference: neutral
+    ideology_strength: 0.12
+    switching_threshold: 0.03
+    inertia: 0.18
+    max_loss_pct: 0.05
+    activity_type: transactional
+    transaction_velocity: 0.78
+    accepts_foreign_blocks: true
+  addnode:
+  - node-0034
+  - node-0036
+
+# -----------------------------------------------------------------------------
+# MID-TIER EXCHANGES (3 on v26) - Tier 1: Individual representation
+# -----------------------------------------------------------------------------
+- name: node-0036
+  image:
+    tag: '26.0'
+  bitcoin_config:
+    maxconnections: 75
+    maxmempool: 300
+  metadata:
+    role: exchange
+    exchange_name: OKX
+    node_type: economic
+    entity_id: exchange-okx
+    representation_tier: 1
+    hashrate_pct: 0.0
+    custody_btc: 300000
+    daily_volume_btc: 45000
+    fork_preference: v26
+    ideology_strength: 0.25
+    switching_threshold: 0.04
+    inertia: 0.15
+    max_loss_pct: 0.08
+    activity_type: transactional
+    transaction_velocity: 0.72
+    accepts_foreign_blocks: true
+  addnode:
+  - node-0035
+  - node-0037
+
+- name: node-0037
+  image:
+    tag: '26.0'
+  bitcoin_config:
+    maxconnections: 75
+    maxmempool: 300
+  metadata:
+    role: exchange
+    exchange_name: Bybit
+    node_type: economic
+    entity_id: exchange-bybit
+    representation_tier: 1
+    hashrate_pct: 0.0
+    custody_btc: 150000
+    daily_volume_btc: 30000
+    fork_preference: v26
+    ideology_strength: 0.20
+    switching_threshold: 0.04
+    inertia: 0.14
+    max_loss_pct: 0.07
+    activity_type: transactional
+    transaction_velocity: 0.68
+    accepts_foreign_blocks: true
+  addnode:
+  - node-0036
+  - node-0038
+
+- name: node-0038
+  image:
+    tag: '26.0'
+  bitcoin_config:
+    maxconnections: 75
+    maxmempool: 300
+  metadata:
+    role: exchange
+    exchange_name: Huobi
+    node_type: economic
+    entity_id: exchange-huobi
+    representation_tier: 1
+    hashrate_pct: 0.0
+    custody_btc: 100000
+    daily_volume_btc: 20000
+    fork_preference: v26
+    ideology_strength: 0.22
+    switching_threshold: 0.05
+    inertia: 0.12
+    max_loss_pct: 0.08
+    activity_type: transactional
+    transaction_velocity: 0.65
+    accepts_foreign_blocks: true
+  addnode:
+  - node-0037
+  - node-0039
+
+# -----------------------------------------------------------------------------
+# PAYMENT PROCESSORS (1 on v26) - Tier 1: Individual representation
+# -----------------------------------------------------------------------------
+- name: node-0039
+  image:
+    tag: '26.0'
+  bitcoin_config:
+    maxconnections: 50
+    maxmempool: 200
+  metadata:
+    role: payment_processor
+    company_name: BitPay
+    node_type: economic
+    entity_id: payment-bitpay
+    representation_tier: 1
+    hashrate_pct: 0.0
+    custody_btc: 8000
+    daily_volume_btc: 20000
+    fork_preference: v26
+    ideology_strength: 0.35
+    switching_threshold: 0.06
+    inertia: 0.12
+    max_loss_pct: 0.12
+    activity_type: transactional
+    transaction_velocity: 0.88
+    accepts_foreign_blocks: true
+  addnode:
+  - node-0038
+  - node-0040
+
+# -----------------------------------------------------------------------------
+# MERCHANTS (3 on v26) - Tier 1: Individual representation
+# -----------------------------------------------------------------------------
+- name: node-0040
+  image:
+    tag: '26.0'
+  bitcoin_config:
+    maxconnections: 25
+    maxmempool: 150
+  metadata:
+    role: merchant
+    company_name: Overstock
+    node_type: economic
+    entity_id: merchant-overstock
+    representation_tier: 1
+    hashrate_pct: 0.0
+    custody_btc: 800
+    daily_volume_btc: 300
+    fork_preference: v26
+    ideology_strength: 0.30
+    switching_threshold: 0.05
+    inertia: 0.15
+    max_loss_pct: 0.10
+    activity_type: transactional
+    transaction_velocity: 0.75
+    accepts_foreign_blocks: true
+  addnode:
+  - node-0039
+  - node-0041
+
+- name: node-0041
+  image:
+    tag: '26.0'
+  bitcoin_config:
+    maxconnections: 25
+    maxmempool: 150
+  metadata:
+    role: merchant
+    company_name: Newegg
+    node_type: economic
+    entity_id: merchant-newegg
+    representation_tier: 1
+    hashrate_pct: 0.0
+    custody_btc: 400
+    daily_volume_btc: 180
+    fork_preference: neutral
+    ideology_strength: 0.18
+    switching_threshold: 0.04
+    inertia: 0.12
+    max_loss_pct: 0.07
+    activity_type: transactional
+    transaction_velocity: 0.7
+    accepts_foreign_blocks: true
+  addnode:
+  - node-0040
+  - node-0042
+
+- name: node-0042
+  image:
+    tag: '26.0'
+  bitcoin_config:
+    maxconnections: 25
+    maxmempool: 150
+  metadata:
+    role: merchant
+    company_name: AT&T
+    node_type: economic
+    entity_id: merchant-att
+    representation_tier: 1
+    hashrate_pct: 0.0
+    custody_btc: 250
+    daily_volume_btc: 120
+    fork_preference: v26
+    ideology_strength: 0.15
+    switching_threshold: 0.04
+    inertia: 0.18
+    max_loss_pct: 0.06
+    activity_type: transactional
+    transaction_velocity: 0.55
+    accepts_foreign_blocks: true
+  addnode:
+  - node-0041
+  - node-0043
+
+# -----------------------------------------------------------------------------
+# INSTITUTIONAL HOLDERS (2 on v26) - Tier 1: Individual representation
+# -----------------------------------------------------------------------------
+- name: node-0043
+  image:
+    tag: '26.0'
+  bitcoin_config:
+    maxconnections: 50
+    maxmempool: 200
+  metadata:
+    role: institutional
+    company_name: Grayscale
+    node_type: economic
+    entity_id: inst-grayscale
+    representation_tier: 1
+    hashrate_pct: 0.0
+    # Updated: GBTC ETF outflows reduced holdings significantly
+    custody_btc: 230000
+    daily_volume_btc: 2000
+    fork_preference: neutral
+    ideology_strength: 0.15
+    switching_threshold: 0.04
+    inertia: 0.25
+    max_loss_pct: 0.08
+    activity_type: custody
+    transaction_velocity: 0.03
+    accepts_foreign_blocks: true
+  addnode:
+  - node-0042
+  - node-0044
+
+- name: node-0044
+  image:
+    tag: '26.0'
+  bitcoin_config:
+    maxconnections: 50
+    maxmempool: 200
+  metadata:
+    role: institutional
+    company_name: Fidelity Digital
+    node_type: economic
+    entity_id: inst-fidelity
+    representation_tier: 1
+    hashrate_pct: 0.0
+    custody_btc: 150000
+    daily_volume_btc: 800
+    fork_preference: neutral
+    ideology_strength: 0.12
+    switching_threshold: 0.03
+    inertia: 0.22
+    max_loss_pct: 0.06
+    activity_type: custody
+    transaction_velocity: 0.04
+    accepts_foreign_blocks: true
+  addnode:
+  - node-0043
+  - node-0045
+
+# -----------------------------------------------------------------------------
+# POWER USERS (6 on v26) - Tier 2: ~400 participants each
+# Hashrate values updated per documentation
+# -----------------------------------------------------------------------------
+- name: node-0045
+  image:
+    tag: '26.0'
+  bitcoin_config:
+    maxconnections: 50
+    maxmempool: 200
+  metadata:
+    role: power_user
+    user_type: BCH Supporter
+    node_type: user
+    entity_id: user-bch-001
+    representation_tier: 2
+    represents_count: 400
+    # Hashrate: 0.45% (ideological solo miners)
+    hashrate_pct: 0.45
+    custody_btc: 80
+    daily_volume_btc: 4
+    fork_preference: v26
+    ideology_strength: 0.88
+    switching_threshold: 0.25
+    inertia: 0.05
+    max_loss_pct: 0.45
+    activity_type: mixed
+    transaction_velocity: 0.35
+    accepts_foreign_blocks: true
+  addnode:
+  - node-0044
+  - node-0046
+
+- name: node-0046
+  image:
+    tag: '26.0'
+  bitcoin_config:
+    maxconnections: 50
+    maxmempool: 200
+  metadata:
+    role: power_user
+    user_type: Big Blocker
+    node_type: user
+    entity_id: user-bigblock-001
+    representation_tier: 2
+    represents_count: 400
+    # Hashrate: 0.35% (ideological miners)
+    hashrate_pct: 0.35
+    custody_btc: 40
+    daily_volume_btc: 3
+    fork_preference: v26
+    ideology_strength: 0.82
+    switching_threshold: 0.20
+    inertia: 0.05
+    max_loss_pct: 0.38
+    activity_type: mixed
+    transaction_velocity: 0.28
+    accepts_foreign_blocks: true
+  addnode:
+  - node-0045
+  - node-0047
+
+- name: node-0047
+  image:
+    tag: '26.0'
+  bitcoin_config:
+    maxconnections: 50
+    maxmempool: 200
+  metadata:
+    role: power_user
+    user_type: Exchange Arbitrageur
+    node_type: user
+    entity_id: user-arb-001
+    representation_tier: 2
+    represents_count: 400
+    hashrate_pct: 0.0
+    custody_btc: 150
+    daily_volume_btc: 80
+    fork_preference: neutral
+    ideology_strength: 0.05
+    switching_threshold: 0.02
+    inertia: 0.03
+    max_loss_pct: 0.03
+    activity_type: transactional
+    transaction_velocity: 0.9
+    accepts_foreign_blocks: true
+  addnode:
+  - node-0046
+  - node-0048
+
+- name: node-0048
+  image:
+    tag: '26.0'
+  bitcoin_config:
+    maxconnections: 50
+    maxmempool: 200
+  metadata:
+    role: power_user
+    user_type: Mining Farm Operator
+    node_type: user
+    entity_id: user-farm-001
+    representation_tier: 2
+    represents_count: 400
+    # Hashrate: 7.80% (aggregated small farms + diffuse hashrate)
+    hashrate_pct: 7.80
+    custody_btc: 500
+    daily_volume_btc: 20
+    fork_preference: v26
+    ideology_strength: 0.55
+    switching_threshold: 0.10
+    inertia: 0.12
+    max_loss_pct: 0.20
+    activity_type: mixed
+    transaction_velocity: 0.25
+    accepts_foreign_blocks: true
+  addnode:
+  - node-0047
+  - node-0049
+
+- name: node-0049
+  image:
+    tag: '26.0'
+  bitcoin_config:
+    maxconnections: 50
+    maxmempool: 200
+  metadata:
+    role: power_user
+    user_type: OTC Desk Operator
+    node_type: user
+    entity_id: user-otc-001
+    representation_tier: 2
+    represents_count: 400
+    hashrate_pct: 0.0
+    custody_btc: 1000
+    daily_volume_btc: 200
+    fork_preference: neutral
+    ideology_strength: 0.10
+    switching_threshold: 0.03
+    inertia: 0.08
+    max_loss_pct: 0.05
+    activity_type: transactional
+    transaction_velocity: 0.75
+    accepts_foreign_blocks: true
+  addnode:
+  - node-0048
+  - node-0050
+
+- name: node-0050
+  image:
+    tag: '26.0'
+  bitcoin_config:
+    maxconnections: 50
+    maxmempool: 200
+  metadata:
+    role: power_user
+    user_type: Lightning Node Operator
+    node_type: user
+    entity_id: user-ln-001
+    representation_tier: 2
+    represents_count: 400
+    # Hashrate: 0.20% (some run ASICs)
+    hashrate_pct: 0.20
+    custody_btc: 20
+    daily_volume_btc: 10
+    fork_preference: v26
+    ideology_strength: 0.45
+    switching_threshold: 0.08
+    inertia: 0.10
+    max_loss_pct: 0.18
+    activity_type: transactional
+    transaction_velocity: 0.6
+    accepts_foreign_blocks: true
+  addnode:
+  - node-0049
+  - node-0051
+
+# -----------------------------------------------------------------------------
+# CASUAL USERS (8 on v26) - Tier 2: ~1,250 participants each
+# -----------------------------------------------------------------------------
+- name: node-0051
+  image:
+    tag: '26.0'
+  bitcoin_config:
+    maxconnections: 20
+    maxmempool: 100
+  metadata:
+    role: casual_user
+    user_type: Long-term HODLer
+    node_type: user
+    entity_id: user-hodl-002
+    representation_tier: 2
+    represents_count: 1250
+    hashrate_pct: 0.0
+    # Individual: 8 BTC; Cohort: 10,000 BTC
+    custody_btc: 8
+    daily_volume_btc: 0.01
+    fork_preference: v26
+    ideology_strength: 0.55
+    switching_threshold: 0.12
+    inertia: 0.18
+    max_loss_pct: 0.22
+    activity_type: custody
+    transaction_velocity: 0.01
+    accepts_foreign_blocks: true
+  addnode:
+  - node-0050
+  - node-0052
+
+- name: node-0052
+  image:
+    tag: '26.0'
+  bitcoin_config:
+    maxconnections: 20
+    maxmempool: 100
+  metadata:
+    role: casual_user
+    user_type: DCA Investor
+    node_type: user
+    entity_id: user-dca-002
+    representation_tier: 2
+    represents_count: 1250
+    hashrate_pct: 0.0
+    # Individual: 4 BTC; Cohort: 5,000 BTC
+    custody_btc: 4
+    daily_volume_btc: 0.04
+    fork_preference: neutral
+    ideology_strength: 0.25
+    switching_threshold: 0.07
+    inertia: 0.12
+    max_loss_pct: 0.10
+    activity_type: mixed
+    transaction_velocity: 0.06
+    accepts_foreign_blocks: true
+  addnode:
+  - node-0051
+  - node-0053
+
+- name: node-0053
+  image:
+    tag: '26.0'
+  bitcoin_config:
+    maxconnections: 20
+    maxmempool: 100
+  metadata:
+    role: casual_user
+    user_type: Occasional Spender
+    node_type: user
+    entity_id: user-spend-002
+    representation_tier: 2
+    represents_count: 1250
+    hashrate_pct: 0.0
+    # Individual: 1.5 BTC; Cohort: 1,875 BTC
+    custody_btc: 1.5
+    daily_volume_btc: 0.08
+    fork_preference: v26
+    ideology_strength: 0.20
+    switching_threshold: 0.05
+    inertia: 0.08
+    max_loss_pct: 0.08
+    activity_type: transactional
+    transaction_velocity: 0.35
+    accepts_foreign_blocks: true
+  addnode:
+  - node-0052
+  - node-0054
+
+- name: node-0054
+  image:
+    tag: '26.0'
+  bitcoin_config:
+    maxconnections: 20
+    maxmempool: 100
+  metadata:
+    role: casual_user
+    user_type: Newbie
+    node_type: user
+    entity_id: user-new-002
+    representation_tier: 2
+    represents_count: 1250
+    hashrate_pct: 0.0
+    # Individual: 0.3 BTC; Cohort: 375 BTC
+    custody_btc: 0.3
+    daily_volume_btc: 0.01
+    fork_preference: neutral
+    ideology_strength: 0.03
+    switching_threshold: 0.02
+    inertia: 0.04
+    max_loss_pct: 0.04
+    activity_type: mixed
+    transaction_velocity: 0.12
+    accepts_foreign_blocks: true
+  addnode:
+  - node-0053
+  - node-0055
+
+- name: node-0055
+  image:
+    tag: '26.0'
+  bitcoin_config:
+    maxconnections: 20
+    maxmempool: 100
+  metadata:
+    role: casual_user
+    user_type: Remittance User
+    node_type: user
+    entity_id: user-remit-002
+    representation_tier: 2
+    represents_count: 1250
+    hashrate_pct: 0.0
+    # Individual: 0.15 BTC; Cohort: 187.5 BTC
+    custody_btc: 0.15
+    daily_volume_btc: 0.4
+    fork_preference: v26
+    ideology_strength: 0.12
+    switching_threshold: 0.04
+    inertia: 0.06
+    max_loss_pct: 0.05
+    activity_type: transactional
+    transaction_velocity: 0.72
+    accepts_foreign_blocks: true
+  addnode:
+  - node-0054
+  - node-0056
+
+- name: node-0056
+  image:
+    tag: '26.0'
+  bitcoin_config:
+    maxconnections: 20
+    maxmempool: 100
+  metadata:
+    role: casual_user
+    user_type: Savings Account
+    node_type: user
+    entity_id: user-save-002
+    representation_tier: 2
+    represents_count: 1250
+    hashrate_pct: 0.0
+    # Individual: 2.5 BTC; Cohort: 3,125 BTC
+    custody_btc: 2.5
+    daily_volume_btc: 0.008
+    fork_preference: v26
+    ideology_strength: 0.38
+    switching_threshold: 0.08
+    inertia: 0.15
+    max_loss_pct: 0.12
+    activity_type: custody
+    transaction_velocity: 0.02
+    accepts_foreign_blocks: true
+  addnode:
+  - node-0055
+  - node-0057
+
+- name: node-0057
+  image:
+    tag: '26.0'
+  bitcoin_config:
+    maxconnections: 20
+    maxmempool: 100
+  metadata:
+    role: casual_user
+    user_type: Speculator
+    node_type: user
+    entity_id: user-spec-001
+    representation_tier: 2
+    represents_count: 1250
+    hashrate_pct: 0.0
+    # Individual: 1 BTC; Cohort: 1,250 BTC
+    custody_btc: 1
+    daily_volume_btc: 0.5
+    fork_preference: neutral
+    ideology_strength: 0.08
+    switching_threshold: 0.03
+    inertia: 0.05
+    max_loss_pct: 0.04
+    activity_type: transactional
+    transaction_velocity: 0.65
+    accepts_foreign_blocks: true
+  addnode:
+  - node-0056
+  - node-0058
+
+- name: node-0058
+  image:
+    tag: '26.0'
+  bitcoin_config:
+    maxconnections: 20
+    maxmempool: 100
+  metadata:
+    role: casual_user
+    user_type: Gift Recipient
+    node_type: user
+    entity_id: user-gift-002
+    representation_tier: 2
+    represents_count: 1250
+    hashrate_pct: 0.0
+    # Individual: 0.08 BTC; Cohort: 100 BTC
+    custody_btc: 0.08
+    daily_volume_btc: 0.003
+    fork_preference: neutral
+    ideology_strength: 0.02
+    switching_threshold: 0.02
+    inertia: 0.02
+    max_loss_pct: 0.02
+    activity_type: custody
+    transaction_velocity: 0.04
+    accepts_foreign_blocks: true
+  addnode:
+  - node-0057
+  - node-0059
+
+- name: node-0059
+  image:
+    tag: '26.0'
+  bitcoin_config:
+    maxconnections: 20
+    maxmempool: 100
+  metadata:
+    role: casual_user
+    user_type: Curious Experimenter
+    node_type: user
+    entity_id: user-curious-001
+    representation_tier: 2
+    represents_count: 1250
+    # Hashrate: 0.10% (minimal test mining)
+    hashrate_pct: 0.10
+    # Individual: 0.05 BTC; Cohort: 62.5 BTC
+    custody_btc: 0.05
+    daily_volume_btc: 0.01
+    fork_preference: v26
+    ideology_strength: 0.15
+    switching_threshold: 0.05
+    inertia: 0.05
+    max_loss_pct: 0.08
+    activity_type: mixed
+    transaction_velocity: 0.2
+    accepts_foreign_blocks: true
+  addnode:
+  - node-0058

@@ -1,0 +1,4273 @@
+realistic_current:
+  description: Based on actual Bitcoin mining pool landscape (2024-2025)
+  pools:
+  - pool_id: foundryusa
+    hashrate_pct: 26.89
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.03
+    max_loss_usd: null
+    max_loss_pct: 0.0
+  - pool_id: antpool
+    hashrate_pct: 19.25
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.05
+    max_loss_usd: null
+    max_loss_pct: 0.0
+  - pool_id: viabtc
+    hashrate_pct: 11.39
+    fork_preference: fork_b
+    ideology_strength: 0.5
+    profitability_threshold: 0.08
+    max_loss_usd: 2000000
+    max_loss_pct: 0.2
+  - pool_id: f2pool
+    hashrate_pct: 11.25
+    fork_preference: fork_a
+    ideology_strength: 0.3
+    profitability_threshold: 0.05
+    max_loss_usd: 300000
+    max_loss_pct: 0.1
+  - pool_id: binancepool
+    hashrate_pct: 10.04
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.02
+    max_loss_usd: null
+    max_loss_pct: 0.0
+  - pool_id: marapool
+    hashrate_pct: 8.25
+    fork_preference: neutral
+    ideology_strength: 0.1
+    profitability_threshold: 0.05
+    max_loss_usd: null
+    max_loss_pct: 0.05
+  - pool_id: sbicrypto
+    hashrate_pct: 4.57
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.05
+    max_loss_usd: null
+    max_loss_pct: 0.0
+  - pool_id: luxor
+    hashrate_pct: 3.94
+    fork_preference: fork_a
+    ideology_strength: 0.4
+    profitability_threshold: 0.1
+    max_loss_usd: 500000
+    max_loss_pct: 0.1
+  - pool_id: ocean
+    hashrate_pct: 1.42
+    fork_preference: fork_a
+    ideology_strength: 0.8
+    profitability_threshold: 0.2
+    max_loss_usd: 200000
+    max_loss_pct: 0.3
+  - pool_id: braiinspool
+    hashrate_pct: 1.37
+    fork_preference: fork_a
+    ideology_strength: 0.4
+    profitability_threshold: 0.1
+    max_loss_usd: 100000
+    max_loss_pct: 0.1
+ideological_war:
+  description: Strong ideological split with real pool names
+  pools:
+  - pool_id: foundryusa
+    hashrate_pct: 26.89
+    fork_preference: fork_a
+    ideology_strength: 0.85
+    profitability_threshold: 0.2
+    max_loss_usd: 5000000
+    max_loss_pct: 0.4
+  - pool_id: luxor
+    hashrate_pct: 3.94
+    fork_preference: fork_a
+    ideology_strength: 0.8
+    profitability_threshold: 0.2
+    max_loss_usd: 500000
+    max_loss_pct: 0.35
+  - pool_id: ocean
+    hashrate_pct: 1.42
+    fork_preference: fork_a
+    ideology_strength: 0.85
+    profitability_threshold: 0.22
+    max_loss_usd: 200000
+    max_loss_pct: 0.35
+  - pool_id: antpool
+    hashrate_pct: 19.25
+    fork_preference: fork_b
+    ideology_strength: 0.9
+    profitability_threshold: 0.25
+    max_loss_usd: 5000000
+    max_loss_pct: 0.4
+  - pool_id: viabtc
+    hashrate_pct: 11.39
+    fork_preference: fork_b
+    ideology_strength: 0.85
+    profitability_threshold: 0.22
+    max_loss_usd: 2000000
+    max_loss_pct: 0.35
+  - pool_id: f2pool
+    hashrate_pct: 11.25
+    fork_preference: fork_b
+    ideology_strength: 0.7
+    profitability_threshold: 0.15
+    max_loss_usd: 1000000
+    max_loss_pct: 0.25
+  - pool_id: marapool
+    hashrate_pct: 8.25
+    fork_preference: fork_b
+    ideology_strength: 0.6
+    profitability_threshold: 0.12
+    max_loss_usd: 500000
+    max_loss_pct: 0.2
+  - pool_id: binancepool
+    hashrate_pct: 10.04
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.01
+    max_loss_usd: null
+    max_loss_pct: 0.0
+  - pool_id: sbicrypto
+    hashrate_pct: 4.57
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.02
+    max_loss_usd: null
+    max_loss_pct: 0.0
+  - pool_id: braiinspool
+    hashrate_pct: 1.37
+    fork_preference: neutral
+    ideology_strength: 0.1
+    profitability_threshold: 0.05
+    max_loss_usd: 100000
+    max_loss_pct: 0.02
+ideological_fork_war:
+  description: Strong ideological split (like Bitcoin Cash fork)
+  pools:
+  - pool_id: progressive_pool_1
+    hashrate_pct: 20.0
+    fork_preference: fork_a
+    ideology_strength: 0.9
+    profitability_threshold: 0.25
+    max_loss_usd: 5000000
+    max_loss_pct: 0.4
+  - pool_id: progressive_pool_2
+    hashrate_pct: 15.0
+    fork_preference: fork_a
+    ideology_strength: 0.7
+    profitability_threshold: 0.15
+    max_loss_usd: 2000000
+    max_loss_pct: 0.25
+  - pool_id: neutral_rational_1
+    hashrate_pct: 15.0
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.03
+    max_loss_usd: null
+    max_loss_pct: 0.0
+  - pool_id: conservative_pool_1
+    hashrate_pct: 20.0
+    fork_preference: fork_b
+    ideology_strength: 0.9
+    profitability_threshold: 0.25
+    max_loss_usd: 5000000
+    max_loss_pct: 0.4
+  - pool_id: conservative_pool_2
+    hashrate_pct: 15.0
+    fork_preference: fork_b
+    ideology_strength: 0.7
+    profitability_threshold: 0.15
+    max_loss_usd: 2000000
+    max_loss_pct: 0.25
+  - pool_id: neutral_rational_2
+    hashrate_pct: 10.0
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.03
+    max_loss_usd: null
+    max_loss_pct: 0.0
+  - pool_id: opportunistic
+    hashrate_pct: 5.0
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.01
+    max_loss_usd: null
+    max_loss_pct: 0.0
+purely_rational:
+  description: All pools purely profit-driven (no ideology)
+  pools:
+  - pool_id: pool_1
+    hashrate_pct: 30.0
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.02
+    max_loss_usd: null
+    max_loss_pct: 0.0
+  - pool_id: pool_2
+    hashrate_pct: 25.0
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.03
+    max_loss_usd: null
+    max_loss_pct: 0.0
+  - pool_id: pool_3
+    hashrate_pct: 20.0
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.05
+    max_loss_usd: null
+    max_loss_pct: 0.0
+  - pool_id: pool_4
+    hashrate_pct: 15.0
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.05
+    max_loss_usd: null
+    max_loss_pct: 0.0
+  - pool_id: pool_5
+    hashrate_pct: 10.0
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.08
+    max_loss_usd: null
+    max_loss_pct: 0.0
+weak_resistance:
+  description: Most pools rational, small ideological minority resists
+  pools:
+  - pool_id: rational_major_1
+    hashrate_pct: 35.0
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.02
+    max_loss_usd: null
+    max_loss_pct: 0.0
+  - pool_id: rational_major_2
+    hashrate_pct: 25.0
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.03
+    max_loss_usd: null
+    max_loss_pct: 0.0
+  - pool_id: rational_major_3
+    hashrate_pct: 20.0
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.05
+    max_loss_usd: null
+    max_loss_pct: 0.0
+  - pool_id: ideological_resistance_1
+    hashrate_pct: 12.0
+    fork_preference: fork_b
+    ideology_strength: 0.8
+    profitability_threshold: 0.2
+    max_loss_usd: 3000000
+    max_loss_pct: 0.3
+  - pool_id: ideological_resistance_2
+    hashrate_pct: 8.0
+    fork_preference: fork_b
+    ideology_strength: 0.6
+    profitability_threshold: 0.15
+    max_loss_usd: 1000000
+    max_loss_pct: 0.2
+close_battle:
+  description: Evenly matched factions with real pool names - outcome uncertain
+  pools:
+  - pool_id: foundryusa
+    hashrate_pct: 26.89
+    fork_preference: fork_a
+    ideology_strength: 0.85
+    profitability_threshold: 0.2
+    max_loss_usd: 10000000
+    max_loss_pct: 0.35
+  - pool_id: f2pool
+    hashrate_pct: 11.25
+    fork_preference: fork_a
+    ideology_strength: 0.6
+    profitability_threshold: 0.12
+    max_loss_usd: 3000000
+    max_loss_pct: 0.2
+  - pool_id: antpool
+    hashrate_pct: 19.25
+    fork_preference: fork_b
+    ideology_strength: 0.85
+    profitability_threshold: 0.2
+    max_loss_usd: 10000000
+    max_loss_pct: 0.35
+  - pool_id: viabtc
+    hashrate_pct: 11.39
+    fork_preference: fork_b
+    ideology_strength: 0.7
+    profitability_threshold: 0.15
+    max_loss_usd: 2000000
+    max_loss_pct: 0.25
+  - pool_id: marapool
+    hashrate_pct: 8.25
+    fork_preference: fork_b
+    ideology_strength: 0.5
+    profitability_threshold: 0.1
+    max_loss_usd: 1000000
+    max_loss_pct: 0.15
+  - pool_id: binancepool
+    hashrate_pct: 10.04
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.02
+    max_loss_usd: null
+    max_loss_pct: 0.0
+  - pool_id: sbicrypto
+    hashrate_pct: 4.57
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.03
+    max_loss_usd: null
+    max_loss_pct: 0.0
+  - pool_id: luxor
+    hashrate_pct: 3.94
+    fork_preference: neutral
+    ideology_strength: 0.1
+    profitability_threshold: 0.05
+    max_loss_usd: 500000
+    max_loss_pct: 0.02
+  - pool_id: ocean
+    hashrate_pct: 1.42
+    fork_preference: neutral
+    ideology_strength: 0.2
+    profitability_threshold: 0.08
+    max_loss_usd: 200000
+    max_loss_pct: 0.05
+  - pool_id: braiinspool
+    hashrate_pct: 1.37
+    fork_preference: neutral
+    ideology_strength: 0.1
+    profitability_threshold: 0.05
+    max_loss_usd: 100000
+    max_loss_pct: 0.02
+close_battle_legacy:
+  description: Evenly matched factions - outcome uncertain (legacy generic names)
+  pools:
+  - pool_id: fork_a_champion
+    hashrate_pct: 25.0
+    fork_preference: fork_a
+    ideology_strength: 0.85
+    profitability_threshold: 0.2
+    max_loss_usd: 10000000
+    max_loss_pct: 0.35
+  - pool_id: fork_a_supporter
+    hashrate_pct: 15.0
+    fork_preference: fork_a
+    ideology_strength: 0.6
+    profitability_threshold: 0.12
+    max_loss_usd: 3000000
+    max_loss_pct: 0.2
+  - pool_id: fork_b_champion
+    hashrate_pct: 25.0
+    fork_preference: fork_b
+    ideology_strength: 0.85
+    profitability_threshold: 0.2
+    max_loss_usd: 10000000
+    max_loss_pct: 0.35
+  - pool_id: fork_b_supporter
+    hashrate_pct: 15.0
+    fork_preference: fork_b
+    ideology_strength: 0.6
+    profitability_threshold: 0.12
+    max_loss_usd: 3000000
+    max_loss_pct: 0.2
+  - pool_id: swing_pool_1
+    hashrate_pct: 10.0
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.03
+    max_loss_usd: null
+    max_loss_pct: 0.0
+  - pool_id: swing_pool_2
+    hashrate_pct: 10.0
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.05
+    max_loss_usd: null
+    max_loss_pct: 0.0
+asymmetric_balanced:
+  description: Balanced battle - fork_a ~40% vs fork_b ~45% committed, ~15% swing voters
+  pools:
+  - pool_id: foundryusa
+    hashrate_pct: 26.89
+    fork_preference: fork_a
+    ideology_strength: 0.7
+    profitability_threshold: 0.15
+    max_loss_usd: null
+    max_loss_pct: 0.25
+  - pool_id: luxor
+    hashrate_pct: 3.94
+    fork_preference: fork_a
+    ideology_strength: 0.65
+    profitability_threshold: 0.12
+    max_loss_usd: null
+    max_loss_pct: 0.2
+  - pool_id: ocean
+    hashrate_pct: 1.56
+    fork_preference: fork_a
+    ideology_strength: 0.6
+    profitability_threshold: 0.1
+    max_loss_usd: null
+    max_loss_pct: 0.18
+  - pool_id: braiinspool
+    hashrate_pct: 2.86
+    fork_preference: fork_a
+    ideology_strength: 0.55
+    profitability_threshold: 0.1
+    max_loss_usd: null
+    max_loss_pct: 0.15
+  - pool_id: antpool
+    hashrate_pct: 19.25
+    fork_preference: fork_b
+    ideology_strength: 0.7
+    profitability_threshold: 0.15
+    max_loss_usd: null
+    max_loss_pct: 0.25
+  - pool_id: viabtc
+    hashrate_pct: 11.39
+    fork_preference: fork_b
+    ideology_strength: 0.65
+    profitability_threshold: 0.12
+    max_loss_usd: null
+    max_loss_pct: 0.2
+  - pool_id: f2pool
+    hashrate_pct: 11.25
+    fork_preference: fork_b
+    ideology_strength: 0.55
+    profitability_threshold: 0.1
+    max_loss_usd: null
+    max_loss_pct: 0.15
+  - pool_id: binancepool
+    hashrate_pct: 10.04
+    fork_preference: neutral
+    ideology_strength: 0.1
+    profitability_threshold: 0.05
+    max_loss_usd: null
+    max_loss_pct: 0.02
+  - pool_id: marapool
+    hashrate_pct: 8.25
+    fork_preference: neutral
+    ideology_strength: 0.15
+    profitability_threshold: 0.06
+    max_loss_usd: null
+    max_loss_pct: 0.03
+  - pool_id: sbicrypto
+    hashrate_pct: 4.57
+    fork_preference: neutral
+    ideology_strength: 0.1
+    profitability_threshold: 0.05
+    max_loss_usd: null
+    max_loss_pct: 0.02
+asymmetric_extreme:
+  description: Extreme divergence scenario. fork_a committed minority, fork_b pragmatic
+    majority, large neutral bloc.
+  pools:
+  - pool_id: foundryusa
+    hashrate_pct: 26.89
+    fork_preference: fork_a
+    ideology_strength: 0.95
+    profitability_threshold: 0.4
+    max_loss_usd: null
+    max_loss_pct: 0.5
+  - pool_id: luxor
+    hashrate_pct: 3.94
+    fork_preference: fork_a
+    ideology_strength: 0.9
+    profitability_threshold: 0.35
+    max_loss_usd: null
+    max_loss_pct: 0.45
+  - pool_id: ocean
+    hashrate_pct: 1.56
+    fork_preference: fork_a
+    ideology_strength: 0.92
+    profitability_threshold: 0.38
+    max_loss_usd: null
+    max_loss_pct: 0.48
+  - pool_id: antpool
+    hashrate_pct: 19.25
+    fork_preference: fork_b
+    ideology_strength: 0.5
+    profitability_threshold: 0.12
+    max_loss_usd: null
+    max_loss_pct: 0.15
+  - pool_id: viabtc
+    hashrate_pct: 11.39
+    fork_preference: fork_b
+    ideology_strength: 0.4
+    profitability_threshold: 0.1
+    max_loss_usd: null
+    max_loss_pct: 0.12
+  - pool_id: f2pool
+    hashrate_pct: 11.25
+    fork_preference: fork_b
+    ideology_strength: 0.35
+    profitability_threshold: 0.08
+    max_loss_usd: null
+    max_loss_pct: 0.1
+  - pool_id: binancepool
+    hashrate_pct: 10.04
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.02
+    max_loss_usd: null
+    max_loss_pct: 0.0
+  - pool_id: marapool
+    hashrate_pct: 8.25
+    fork_preference: neutral
+    ideology_strength: 0.05
+    profitability_threshold: 0.03
+    max_loss_usd: null
+    max_loss_pct: 0.01
+  - pool_id: sbicrypto
+    hashrate_pct: 4.57
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.02
+    max_loss_usd: null
+    max_loss_pct: 0.0
+  - pool_id: braiinspool
+    hashrate_pct: 2.86
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.02
+    max_loss_usd: null
+    max_loss_pct: 0.0
+asymmetric_softfork:
+  description: Non-contentious soft fork with asymmetric block propagation. fork_a minority
+    hashrate with strong ideology.
+  pools:
+  - pool_id: foundryusa
+    hashrate_pct: 26.89
+    fork_preference: fork_a
+    ideology_strength: 0.9
+    profitability_threshold: 0.25
+    max_loss_usd: null
+    max_loss_pct: 0.4
+  - pool_id: luxor
+    hashrate_pct: 3.94
+    fork_preference: fork_a
+    ideology_strength: 0.8
+    profitability_threshold: 0.2
+    max_loss_usd: null
+    max_loss_pct: 0.3
+  - pool_id: ocean
+    hashrate_pct: 1.56
+    fork_preference: fork_a
+    ideology_strength: 0.85
+    profitability_threshold: 0.22
+    max_loss_usd: null
+    max_loss_pct: 0.35
+  - pool_id: antpool
+    hashrate_pct: 19.25
+    fork_preference: fork_b
+    ideology_strength: 0.9
+    profitability_threshold: 0.25
+    max_loss_usd: null
+    max_loss_pct: 0.4
+  - pool_id: viabtc
+    hashrate_pct: 11.39
+    fork_preference: fork_b
+    ideology_strength: 0.85
+    profitability_threshold: 0.22
+    max_loss_usd: null
+    max_loss_pct: 0.35
+  - pool_id: f2pool
+    hashrate_pct: 11.25
+    fork_preference: fork_b
+    ideology_strength: 0.8
+    profitability_threshold: 0.2
+    max_loss_usd: null
+    max_loss_pct: 0.3
+  - pool_id: marapool
+    hashrate_pct: 8.25
+    fork_preference: fork_b
+    ideology_strength: 0.7
+    profitability_threshold: 0.15
+    max_loss_usd: null
+    max_loss_pct: 0.25
+  - pool_id: binancepool
+    hashrate_pct: 10.04
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.01
+    max_loss_usd: null
+    max_loss_pct: 0.0
+  - pool_id: sbicrypto
+    hashrate_pct: 4.57
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.02
+    max_loss_usd: null
+    max_loss_pct: 0.0
+  - pool_id: braiinspool
+    hashrate_pct: 2.86
+    fork_preference: neutral
+    ideology_strength: 0.1
+    profitability_threshold: 0.05
+    max_loss_usd: null
+    max_loss_pct: 0.02
+ideological_standoff:
+  description: Iron-committed factions (31% each) vs large neutral swing bloc (38%).
+    Fork persists indefinitely.
+  pools:
+  - pool_id: foundryusa
+    hashrate_pct: 26.89
+    fork_preference: fork_a
+    ideology_strength: 0.9
+    profitability_threshold: 0.3
+    max_loss_usd: null
+    max_loss_pct: 0.35
+  - pool_id: ocean
+    hashrate_pct: 1.56
+    fork_preference: fork_a
+    ideology_strength: 0.9
+    profitability_threshold: 0.3
+    max_loss_usd: null
+    max_loss_pct: 0.35
+  - pool_id: braiinspool
+    hashrate_pct: 2.86
+    fork_preference: fork_a
+    ideology_strength: 0.9
+    profitability_threshold: 0.28
+    max_loss_usd: null
+    max_loss_pct: 0.35
+  - pool_id: antpool
+    hashrate_pct: 19.25
+    fork_preference: fork_b
+    ideology_strength: 0.9
+    profitability_threshold: 0.3
+    max_loss_usd: null
+    max_loss_pct: 0.35
+  - pool_id: viabtc
+    hashrate_pct: 11.39
+    fork_preference: fork_b
+    ideology_strength: 0.9
+    profitability_threshold: 0.28
+    max_loss_usd: null
+    max_loss_pct: 0.35
+  - pool_id: f2pool
+    hashrate_pct: 11.25
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.03
+    max_loss_usd: null
+    max_loss_pct: 0.0
+  - pool_id: binancepool
+    hashrate_pct: 10.04
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.02
+    max_loss_usd: null
+    max_loss_pct: 0.0
+  - pool_id: marapool
+    hashrate_pct: 8.25
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.04
+    max_loss_usd: null
+    max_loss_pct: 0.0
+  - pool_id: luxor
+    hashrate_pct: 3.94
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.05
+    max_loss_usd: null
+    max_loss_pct: 0.0
+  - pool_id: sbicrypto
+    hashrate_pct: 4.57
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.03
+    max_loss_usd: null
+    max_loss_pct: 0.0
+fork_b_dominant:
+  description: fork_b holds ~70% hashrate. Committed 25% fork_a minority resists but ultimately
+    loses.
+  pools:
+  - pool_id: foundryusa
+    hashrate_pct: 26.89
+    fork_preference: fork_a
+    ideology_strength: 0.85
+    profitability_threshold: 0.22
+    max_loss_usd: 5000000
+    max_loss_pct: 0.4
+  - pool_id: ocean
+    hashrate_pct: 1.42
+    fork_preference: fork_a
+    ideology_strength: 0.55
+    profitability_threshold: 0.12
+    max_loss_usd: 200000
+    max_loss_pct: 0.25
+  - pool_id: braiinspool
+    hashrate_pct: 1.37
+    fork_preference: fork_a
+    ideology_strength: 0.4
+    profitability_threshold: 0.1
+    max_loss_usd: 150000
+    max_loss_pct: 0.18
+  - pool_id: antpool
+    hashrate_pct: 19.25
+    fork_preference: fork_b
+    ideology_strength: 0.65
+    profitability_threshold: 0.18
+    max_loss_usd: 5000000
+    max_loss_pct: 0.4
+  - pool_id: viabtc
+    hashrate_pct: 11.39
+    fork_preference: fork_b
+    ideology_strength: 0.6
+    profitability_threshold: 0.15
+    max_loss_usd: 2000000
+    max_loss_pct: 0.35
+  - pool_id: f2pool
+    hashrate_pct: 11.25
+    fork_preference: fork_b
+    ideology_strength: 0.55
+    profitability_threshold: 0.12
+    max_loss_usd: 1000000
+    max_loss_pct: 0.28
+  - pool_id: binancepool
+    hashrate_pct: 10.04
+    fork_preference: fork_b
+    ideology_strength: 0.45
+    profitability_threshold: 0.1
+    max_loss_usd: 500000
+    max_loss_pct: 0.22
+  - pool_id: sbicrypto
+    hashrate_pct: 4.57
+    fork_preference: fork_b
+    ideology_strength: 0.45
+    profitability_threshold: 0.08
+    max_loss_usd: 200000
+    max_loss_pct: 0.18
+  - pool_id: marapool
+    hashrate_pct: 8.25
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.02
+    max_loss_usd: null
+    max_loss_pct: 0.0
+  - pool_id: luxor
+    hashrate_pct: 3.94
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.03
+    max_loss_usd: null
+    max_loss_pct: 0.0
+fork_b_dominant_committed:
+  description: "fork_b ~70% hashrate. Foundry USA is a permanent fork_a true believer \u2014\
+    \ will never switch regardless of cost."
+  pools:
+  - pool_id: foundryusa
+    hashrate_pct: 26.89
+    fork_preference: fork_a
+    ideology_strength: 1.0
+    profitability_threshold: 1.0
+    max_loss_usd: null
+    max_loss_pct: 10.0
+  - pool_id: ocean
+    hashrate_pct: 1.42
+    fork_preference: fork_a
+    ideology_strength: 0.55
+    profitability_threshold: 0.12
+    max_loss_usd: 200000
+    max_loss_pct: 0.25
+  - pool_id: braiinspool
+    hashrate_pct: 1.37
+    fork_preference: fork_a
+    ideology_strength: 0.4
+    profitability_threshold: 0.1
+    max_loss_usd: 150000
+    max_loss_pct: 0.18
+  - pool_id: antpool
+    hashrate_pct: 19.25
+    fork_preference: fork_b
+    ideology_strength: 0.65
+    profitability_threshold: 0.18
+    max_loss_usd: 5000000
+    max_loss_pct: 0.4
+  - pool_id: viabtc
+    hashrate_pct: 11.39
+    fork_preference: fork_b
+    ideology_strength: 0.6
+    profitability_threshold: 0.15
+    max_loss_usd: 2000000
+    max_loss_pct: 0.35
+  - pool_id: f2pool
+    hashrate_pct: 11.25
+    fork_preference: fork_b
+    ideology_strength: 0.55
+    profitability_threshold: 0.12
+    max_loss_usd: 1000000
+    max_loss_pct: 0.28
+  - pool_id: binancepool
+    hashrate_pct: 10.04
+    fork_preference: fork_b
+    ideology_strength: 0.45
+    profitability_threshold: 0.1
+    max_loss_usd: 500000
+    max_loss_pct: 0.22
+  - pool_id: sbicrypto
+    hashrate_pct: 4.57
+    fork_preference: fork_b
+    ideology_strength: 0.45
+    profitability_threshold: 0.08
+    max_loss_usd: 200000
+    max_loss_pct: 0.18
+  - pool_id: marapool
+    hashrate_pct: 8.25
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.02
+    max_loss_usd: null
+    max_loss_pct: 0.0
+  - pool_id: luxor
+    hashrate_pct: 3.94
+    fork_preference: neutral
+    ideology_strength: 0.0
+    profitability_threshold: 0.03
+    max_loss_usd: null
+    max_loss_pct: 0.0
+model_parameters:
+  decision_interval: 600
+  switching_cooldown: 600
+  block_subsidy_btc: 3.125
+  blocks_per_hour: 6.0
+  mining_cost_per_block_usd: 100000
+  export_enabled: true
+  export_interval: 600
+sweep_0000:
+  description: Pool scenario for sweep_0000
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.62
+    profitability_threshold: 0.16
+    max_loss_pct: 0.28
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.62
+    profitability_threshold: 0.16
+    max_loss_pct: 0.28
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.62
+    profitability_threshold: 0.16
+    max_loss_pct: 0.28
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.62
+    profitability_threshold: 0.16
+    max_loss_pct: 0.28
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.62
+    profitability_threshold: 0.16
+    max_loss_pct: 0.28
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.62
+    profitability_threshold: 0.16
+    max_loss_pct: 0.28
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0001:
+  description: Pool scenario for sweep_0001
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0002:
+  description: Pool scenario for sweep_0002
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0003:
+  description: Pool scenario for sweep_0003
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0004:
+  description: Pool scenario for sweep_0004
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0005:
+  description: Pool scenario for sweep_0005
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0006:
+  description: Pool scenario for sweep_0006
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0007:
+  description: Pool scenario for sweep_0007
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0008:
+  description: Pool scenario for sweep_0008
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0009:
+  description: Pool scenario for sweep_0009
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0010:
+  description: Pool scenario for sweep_0010
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0011:
+  description: Pool scenario for sweep_0011
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0012:
+  description: Pool scenario for sweep_0012
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0013:
+  description: Pool scenario for sweep_0013
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0014:
+  description: Pool scenario for sweep_0014
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0015:
+  description: Pool scenario for sweep_0015
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0016:
+  description: Pool scenario for sweep_0016
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0017:
+  description: Pool scenario for sweep_0017
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0018:
+  description: Pool scenario for sweep_0018
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.8
+    profitability_threshold: 0.16
+    max_loss_pct: 0.35
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.8
+    profitability_threshold: 0.16
+    max_loss_pct: 0.35
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.8
+    profitability_threshold: 0.16
+    max_loss_pct: 0.35
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.8
+    profitability_threshold: 0.16
+    max_loss_pct: 0.35
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.8
+    profitability_threshold: 0.16
+    max_loss_pct: 0.35
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.8
+    profitability_threshold: 0.16
+    max_loss_pct: 0.35
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0019:
+  description: Pool scenario for sweep_0019
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.8
+    profitability_threshold: 0.16
+    max_loss_pct: 0.45
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.8
+    profitability_threshold: 0.16
+    max_loss_pct: 0.45
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.8
+    profitability_threshold: 0.16
+    max_loss_pct: 0.45
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.8
+    profitability_threshold: 0.16
+    max_loss_pct: 0.45
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.8
+    profitability_threshold: 0.16
+    max_loss_pct: 0.45
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.8
+    profitability_threshold: 0.16
+    max_loss_pct: 0.45
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0020:
+  description: Pool scenario for sweep_0020
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0021:
+  description: Pool scenario for sweep_0021
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0022:
+  description: Pool scenario for sweep_0022
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0023:
+  description: Pool scenario for sweep_0023
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0024:
+  description: Pool scenario for sweep_0024
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0025:
+  description: Pool scenario for sweep_0025
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0026:
+  description: Pool scenario for sweep_0026
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0027:
+  description: Pool scenario for sweep_0027
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0028:
+  description: Pool scenario for sweep_0028
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0029:
+  description: Pool scenario for sweep_0029
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0030:
+  description: Pool scenario for sweep_0030
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0031:
+  description: Pool scenario for sweep_0031
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0032:
+  description: Pool scenario for sweep_0032
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0033:
+  description: Pool scenario for sweep_0033
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0034:
+  description: Pool scenario for sweep_0034
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0035:
+  description: Pool scenario for sweep_0035
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0036:
+  description: Pool scenario for sweep_0036
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0037:
+  description: Pool scenario for sweep_0037
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0038:
+  description: Pool scenario for sweep_0038
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0039:
+  description: Pool scenario for sweep_0039
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0040:
+  description: Pool scenario for sweep_0040
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0041:
+  description: Pool scenario for sweep_0041
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0042:
+  description: Pool scenario for sweep_0042
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0043:
+  description: Pool scenario for sweep_0043
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0044:
+  description: Pool scenario for sweep_0044
+  pools:
+  - pool_id: pool-foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 30.0
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-marapool
+    pool_name: MARA Pool
+    hashrate_pct: 4.6
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-luxor
+    pool_name: Luxor
+    hashrate_pct: 2.3
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-ocean
+    pool_name: Ocean
+    hashrate_pct: 1.2
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-antpool
+    pool_name: AntPool
+    hashrate_pct: 16.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-f2pool
+    pool_name: F2Pool
+    hashrate_pct: 10.9
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.51
+    profitability_threshold: 0.16
+    max_loss_pct: 0.26
+  - pool_id: pool-viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.2
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+  - pool_id: pool-spiderpool
+    pool_name: SpiderPool
+    hashrate_pct: 9.3
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.16
+    max_loss_pct: 0.02
+sweep_0045:
+  description: Pool scenario for sweep_0045
+  pools:
+  - pool_id: foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 26.89
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.697
+    profitability_threshold: 0.28
+    max_loss_pct: 0.205
+  - pool_id: antpool
+    pool_name: AntPool
+    hashrate_pct: 19.25
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.697
+    profitability_threshold: 0.28
+    max_loss_pct: 0.205
+  - pool_id: viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.39
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.697
+    profitability_threshold: 0.28
+    max_loss_pct: 0.205
+  - pool_id: f2pool
+    pool_name: F2Pool
+    hashrate_pct: 11.25
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.697
+    profitability_threshold: 0.28
+    max_loss_pct: 0.205
+  - pool_id: binancepool
+    pool_name: Binance Pool
+    hashrate_pct: 10.04
+    fork_preference: neutral
+    initial_fork: fork_a
+    ideology_strength: 0.1
+    profitability_threshold: 0.28
+    max_loss_pct: 0.02
+  - pool_id: marapool
+    pool_name: MARA Pool
+    hashrate_pct: 8.25
+    fork_preference: neutral
+    initial_fork: fork_a
+    ideology_strength: 0.1
+    profitability_threshold: 0.28
+    max_loss_pct: 0.02
+  - pool_id: sbicrypto
+    pool_name: SBI Crypto
+    hashrate_pct: 4.57
+    fork_preference: neutral
+    initial_fork: fork_a
+    ideology_strength: 0.1
+    profitability_threshold: 0.28
+    max_loss_pct: 0.02
+  - pool_id: luxor
+    pool_name: Luxor
+    hashrate_pct: 3.94
+    fork_preference: neutral
+    initial_fork: fork_a
+    ideology_strength: 0.1
+    profitability_threshold: 0.28
+    max_loss_pct: 0.02
+  - pool_id: ocean
+    pool_name: OCEAN
+    hashrate_pct: 1.42
+    fork_preference: neutral
+    initial_fork: fork_a
+    ideology_strength: 0.1
+    profitability_threshold: 0.28
+    max_loss_pct: 0.02
+  - pool_id: braiinspool
+    pool_name: Braiins Pool
+    hashrate_pct: 1.37
+    fork_preference: neutral
+    initial_fork: fork_a
+    ideology_strength: 0.1
+    profitability_threshold: 0.28
+    max_loss_pct: 0.02
+sweep_0046:
+  description: Pool scenario for sweep_0046
+  pools:
+  - pool_id: foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 26.89
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.579
+    profitability_threshold: 0.025
+    max_loss_pct: 0.181
+  - pool_id: antpool
+    pool_name: AntPool
+    hashrate_pct: 19.25
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.579
+    profitability_threshold: 0.025
+    max_loss_pct: 0.181
+  - pool_id: viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.39
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.579
+    profitability_threshold: 0.025
+    max_loss_pct: 0.181
+  - pool_id: f2pool
+    pool_name: F2Pool
+    hashrate_pct: 11.25
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.579
+    profitability_threshold: 0.025
+    max_loss_pct: 0.181
+  - pool_id: binancepool
+    pool_name: Binance Pool
+    hashrate_pct: 10.04
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.579
+    profitability_threshold: 0.025
+    max_loss_pct: 0.181
+  - pool_id: marapool
+    pool_name: MARA Pool
+    hashrate_pct: 8.25
+    fork_preference: neutral
+    initial_fork: fork_a
+    ideology_strength: 0.1
+    profitability_threshold: 0.025
+    max_loss_pct: 0.02
+  - pool_id: sbicrypto
+    pool_name: SBI Crypto
+    hashrate_pct: 4.57
+    fork_preference: neutral
+    initial_fork: fork_a
+    ideology_strength: 0.1
+    profitability_threshold: 0.025
+    max_loss_pct: 0.02
+  - pool_id: luxor
+    pool_name: Luxor
+    hashrate_pct: 3.94
+    fork_preference: neutral
+    initial_fork: fork_a
+    ideology_strength: 0.1
+    profitability_threshold: 0.025
+    max_loss_pct: 0.02
+  - pool_id: ocean
+    pool_name: OCEAN
+    hashrate_pct: 1.42
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.025
+    max_loss_pct: 0.02
+  - pool_id: braiinspool
+    pool_name: Braiins Pool
+    hashrate_pct: 1.37
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.025
+    max_loss_pct: 0.02
+sweep_0047:
+  description: Pool scenario for sweep_0047
+  pools:
+  - pool_id: foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 26.89
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.826
+    profitability_threshold: 0.084
+    max_loss_pct: 0.301
+  - pool_id: antpool
+    pool_name: AntPool
+    hashrate_pct: 19.25
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.826
+    profitability_threshold: 0.084
+    max_loss_pct: 0.301
+  - pool_id: viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.39
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.826
+    profitability_threshold: 0.084
+    max_loss_pct: 0.301
+  - pool_id: f2pool
+    pool_name: F2Pool
+    hashrate_pct: 11.25
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.826
+    profitability_threshold: 0.084
+    max_loss_pct: 0.301
+  - pool_id: binancepool
+    pool_name: Binance Pool
+    hashrate_pct: 10.04
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.084
+    max_loss_pct: 0.02
+  - pool_id: marapool
+    pool_name: MARA Pool
+    hashrate_pct: 8.25
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.084
+    max_loss_pct: 0.02
+  - pool_id: sbicrypto
+    pool_name: SBI Crypto
+    hashrate_pct: 4.57
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.084
+    max_loss_pct: 0.02
+  - pool_id: luxor
+    pool_name: Luxor
+    hashrate_pct: 3.94
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.084
+    max_loss_pct: 0.02
+  - pool_id: ocean
+    pool_name: OCEAN
+    hashrate_pct: 1.42
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.084
+    max_loss_pct: 0.02
+  - pool_id: braiinspool
+    pool_name: Braiins Pool
+    hashrate_pct: 1.37
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.084
+    max_loss_pct: 0.02
+sweep_0048:
+  description: Pool scenario for sweep_0048
+  pools:
+  - pool_id: foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 26.89
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.893
+    profitability_threshold: 0.07
+    max_loss_pct: 0.41
+  - pool_id: antpool
+    pool_name: AntPool
+    hashrate_pct: 19.25
+    fork_preference: fork_a
+    initial_fork: fork_b
+    ideology_strength: 0.893
+    profitability_threshold: 0.07
+    max_loss_pct: 0.41
+  - pool_id: viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.39
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.893
+    profitability_threshold: 0.07
+    max_loss_pct: 0.41
+  - pool_id: f2pool
+    pool_name: F2Pool
+    hashrate_pct: 11.25
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.893
+    profitability_threshold: 0.07
+    max_loss_pct: 0.41
+  - pool_id: binancepool
+    pool_name: Binance Pool
+    hashrate_pct: 10.04
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.893
+    profitability_threshold: 0.07
+    max_loss_pct: 0.41
+  - pool_id: marapool
+    pool_name: MARA Pool
+    hashrate_pct: 8.25
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.07
+    max_loss_pct: 0.02
+  - pool_id: sbicrypto
+    pool_name: SBI Crypto
+    hashrate_pct: 4.57
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.07
+    max_loss_pct: 0.02
+  - pool_id: luxor
+    pool_name: Luxor
+    hashrate_pct: 3.94
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.07
+    max_loss_pct: 0.02
+  - pool_id: ocean
+    pool_name: OCEAN
+    hashrate_pct: 1.42
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.07
+    max_loss_pct: 0.02
+  - pool_id: braiinspool
+    pool_name: Braiins Pool
+    hashrate_pct: 1.37
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.07
+    max_loss_pct: 0.02
+sweep_0049:
+  description: Pool scenario for sweep_0049
+  pools:
+  - pool_id: foundryusa
+    pool_name: Foundry USA
+    hashrate_pct: 26.89
+    fork_preference: fork_a
+    initial_fork: fork_a
+    ideology_strength: 0.439
+    profitability_threshold: 0.146
+    max_loss_pct: 0.347
+  - pool_id: antpool
+    pool_name: AntPool
+    hashrate_pct: 19.25
+    fork_preference: fork_b
+    initial_fork: fork_a
+    ideology_strength: 0.439
+    profitability_threshold: 0.146
+    max_loss_pct: 0.347
+  - pool_id: viabtc
+    pool_name: ViaBTC
+    hashrate_pct: 11.39
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.439
+    profitability_threshold: 0.146
+    max_loss_pct: 0.347
+  - pool_id: f2pool
+    pool_name: F2Pool
+    hashrate_pct: 11.25
+    fork_preference: fork_b
+    initial_fork: fork_b
+    ideology_strength: 0.439
+    profitability_threshold: 0.146
+    max_loss_pct: 0.347
+  - pool_id: binancepool
+    pool_name: Binance Pool
+    hashrate_pct: 10.04
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.146
+    max_loss_pct: 0.02
+  - pool_id: marapool
+    pool_name: MARA Pool
+    hashrate_pct: 8.25
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.146
+    max_loss_pct: 0.02
+  - pool_id: sbicrypto
+    pool_name: SBI Crypto
+    hashrate_pct: 4.57
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.146
+    max_loss_pct: 0.02
+  - pool_id: luxor
+    pool_name: Luxor
+    hashrate_pct: 3.94
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.146
+    max_loss_pct: 0.02
+  - pool_id: ocean
+    pool_name: OCEAN
+    hashrate_pct: 1.42
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.146
+    max_loss_pct: 0.02
+  - pool_id: braiinspool
+    pool_name: Braiins Pool
+    hashrate_pct: 1.37
+    fork_preference: neutral
+    initial_fork: fork_b
+    ideology_strength: 0.1
+    profitability_threshold: 0.146
+    max_loss_pct: 0.02

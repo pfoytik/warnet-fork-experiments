@@ -1,0 +1,1064 @@
+realistic_current:
+  description: Exchanges mostly rational, users more ideological
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.1
+    switching_threshold: 0.03
+    inertia: 0.15
+    switching_cooldown: 1800
+    max_loss_pct: 0.05
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.3
+    switching_threshold: 0.08
+    inertia: 0.05
+    switching_cooldown: 3600
+    max_loss_pct: 0.15
+  overrides:
+    major_exchange:
+      fork_preference: neutral
+      ideology_strength: 0.0
+      switching_threshold: 0.02
+      inertia: 0.2
+    exchange:
+      fork_preference: neutral
+      ideology_strength: 0.05
+      switching_threshold: 0.03
+      inertia: 0.15
+    payment_processor:
+      fork_preference: fork_b
+      ideology_strength: 0.2
+      switching_threshold: 0.05
+      inertia: 0.1
+ideological_split:
+  description: Strong ideological division among all participants
+  economic_defaults:
+    switching_threshold: 0.05
+    inertia: 0.1
+    switching_cooldown: 1200
+    max_loss_pct: 0.2
+  user_defaults:
+    switching_threshold: 0.1
+    inertia: 0.03
+    switching_cooldown: 1800
+    max_loss_pct: 0.3
+  overrides:
+    major_exchange:
+      fork_preference: neutral
+      ideology_strength: 0.1
+      inertia: 0.15
+  distribution_pattern:
+    economic:
+    - pct: 40
+      fork_preference: fork_a
+      ideology_strength: 0.7
+    - pct: 40
+      fork_preference: fork_b
+      ideology_strength: 0.7
+    - pct: 20
+      fork_preference: neutral
+      ideology_strength: 0.0
+    user:
+    - pct: 50
+      fork_preference: fork_a
+      ideology_strength: 0.8
+    - pct: 30
+      fork_preference: fork_b
+      ideology_strength: 0.6
+    - pct: 20
+      fork_preference: neutral
+      ideology_strength: 0.1
+purely_rational:
+  description: All economic actors purely rational (no ideology)
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.0
+    switching_threshold: 0.02
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.0
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.0
+    switching_threshold: 0.05
+    inertia: 0.02
+    switching_cooldown: 600
+    max_loss_pct: 0.0
+strong_fork_b_resistance:
+  description: Significant economic resistance to fork_a upgrade
+  economic_defaults:
+    fork_preference: fork_b
+    ideology_strength: 0.5
+    switching_threshold: 0.08
+    inertia: 0.15
+    switching_cooldown: 1800
+    max_loss_pct: 0.25
+  user_defaults:
+    fork_preference: fork_b
+    ideology_strength: 0.6
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 3600
+    max_loss_pct: 0.3
+  overrides:
+    major_exchange:
+      fork_preference: neutral
+      ideology_strength: 0.1
+      switching_threshold: 0.03
+      inertia: 0.2
+asymmetric_balanced:
+  description: Balanced battle - slight fork_a economic edge vs fork_b hashrate edge. Moderate
+    ideology creates tension.
+  economic_defaults:
+    switching_threshold: 0.08
+    inertia: 0.1
+    switching_cooldown: 900
+    max_loss_pct: 0.12
+  user_defaults:
+    switching_threshold: 0.1
+    inertia: 0.08
+    switching_cooldown: 1200
+    max_loss_pct: 0.15
+  overrides:
+    major_exchange:
+      fork_preference: neutral
+      ideology_strength: 0.15
+      inertia: 0.05
+  distribution_pattern:
+    economic:
+    - pct: 45
+      fork_preference: fork_a
+      ideology_strength: 0.4
+    - pct: 35
+      fork_preference: fork_b
+      ideology_strength: 0.4
+    - pct: 20
+      fork_preference: neutral
+      ideology_strength: 0.1
+    user:
+    - pct: 40
+      fork_preference: fork_a
+      ideology_strength: 0.35
+    - pct: 35
+      fork_preference: fork_b
+      ideology_strength: 0.35
+    - pct: 25
+      fork_preference: neutral
+      ideology_strength: 0.1
+asymmetric_extreme:
+  description: Extreme price divergence scenario. fork_a economic dominance vs fork_b hashrate
+    dominance. Low ideology for switching.
+  economic_defaults:
+    switching_threshold: 0.05
+    inertia: 0.02
+    switching_cooldown: 600
+    max_loss_pct: 0.1
+  user_defaults:
+    switching_threshold: 0.08
+    inertia: 0.03
+    switching_cooldown: 900
+    max_loss_pct: 0.15
+  overrides:
+    major_exchange:
+      fork_preference: neutral
+      ideology_strength: 0.05
+      inertia: 0.01
+  distribution_pattern:
+    economic:
+    - pct: 70
+      fork_preference: fork_a
+      ideology_strength: 0.2
+    - pct: 20
+      fork_preference: fork_b
+      ideology_strength: 0.2
+    - pct: 10
+      fork_preference: neutral
+      ideology_strength: 0.0
+    user:
+    - pct: 60
+      fork_preference: fork_a
+      ideology_strength: 0.15
+    - pct: 25
+      fork_preference: fork_b
+      ideology_strength: 0.15
+    - pct: 15
+      fork_preference: neutral
+      ideology_strength: 0.0
+asymmetric_softfork:
+  description: Non-contentious soft fork economic distribution. fork_a minority with
+    committed supporters.
+  economic_defaults:
+    switching_threshold: 0.12
+    inertia: 0.15
+    switching_cooldown: 1200
+    max_loss_pct: 0.25
+  user_defaults:
+    switching_threshold: 0.1
+    inertia: 0.05
+    switching_cooldown: 1800
+    max_loss_pct: 0.15
+  overrides:
+    major_exchange:
+      fork_preference: neutral
+      ideology_strength: 0.2
+      inertia: 0.2
+  distribution_pattern:
+    economic:
+    - pct: 35
+      fork_preference: fork_a
+      ideology_strength: 0.7
+    - pct: 45
+      fork_preference: fork_b
+      ideology_strength: 0.5
+    - pct: 20
+      fork_preference: neutral
+      ideology_strength: 0.1
+    user:
+    - pct: 30
+      fork_preference: fork_a
+      ideology_strength: 0.6
+    - pct: 40
+      fork_preference: fork_b
+      ideology_strength: 0.4
+    - pct: 30
+      fork_preference: neutral
+      ideology_strength: 0.2
+ideological_standoff:
+  description: 50/50 economic iron-lock. Neither side switches under any realistic
+    price divergence.
+  economic_defaults:
+    switching_threshold: 0.3
+    inertia: 0.3
+    switching_cooldown: 7200
+    max_loss_pct: 0.5
+  user_defaults:
+    switching_threshold: 0.25
+    inertia: 0.2
+    switching_cooldown: 7200
+    max_loss_pct: 0.4
+  overrides:
+    major_exchange:
+      fork_preference: neutral
+      ideology_strength: 0.5
+      inertia: 0.35
+  distribution_pattern:
+    economic:
+    - pct: 50
+      fork_preference: fork_a
+      ideology_strength: 0.9
+    - pct: 50
+      fork_preference: fork_b
+      ideology_strength: 0.9
+    user:
+    - pct: 50
+      fork_preference: fork_a
+      ideology_strength: 0.8
+    - pct: 50
+      fork_preference: fork_b
+      ideology_strength: 0.8
+model_parameters:
+  decision_interval: 300
+  economic_switching_cooldown: 1800
+  user_switching_cooldown: 3600
+  initial_fork_assignment: by_partition
+sweep_0000:
+  description: Economic scenario for sweep_0000
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.1
+    inertia: 0.05
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.49
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.294
+  user_custody_fraction: 0.01
+sweep_0001:
+  description: Economic scenario for sweep_0001
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.1
+    inertia: 0.05
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.49
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.294
+sweep_0002:
+  description: Economic scenario for sweep_0002
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.1
+    inertia: 0.05
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.49
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.294
+sweep_0003:
+  description: Economic scenario for sweep_0003
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.1
+    inertia: 0.05
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.49
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.294
+sweep_0004:
+  description: Economic scenario for sweep_0004
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.1
+    inertia: 0.05
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.49
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.294
+sweep_0005:
+  description: Economic scenario for sweep_0005
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.1
+    inertia: 0.05
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.49
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.294
+sweep_0006:
+  description: Economic scenario for sweep_0006
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.1
+    inertia: 0.05
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.49
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.294
+sweep_0007:
+  description: Economic scenario for sweep_0007
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.1
+    inertia: 0.05
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.49
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.294
+sweep_0008:
+  description: Economic scenario for sweep_0008
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.1
+    inertia: 0.05
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.49
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.294
+sweep_0009:
+  description: Economic scenario for sweep_0009
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.1
+    inertia: 0.05
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.49
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.294
+sweep_0010:
+  description: Economic scenario for sweep_0010
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.1
+    inertia: 0.05
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.49
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.294
+sweep_0011:
+  description: Economic scenario for sweep_0011
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.1
+    inertia: 0.05
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.49
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.294
+sweep_0012:
+  description: Economic scenario for sweep_0012
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.1
+    inertia: 0.05
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.49
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.294
+sweep_0013:
+  description: Economic scenario for sweep_0013
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.1
+    inertia: 0.05
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.49
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.294
+sweep_0014:
+  description: Economic scenario for sweep_0014
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.1
+    inertia: 0.05
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.49
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.294
+sweep_0015:
+  description: Economic scenario for sweep_0015
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.1
+    inertia: 0.05
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.49
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.294
+sweep_0016:
+  description: Economic scenario for sweep_0016
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.1
+    inertia: 0.05
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.49
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.294
+sweep_0017:
+  description: Economic scenario for sweep_0017
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.1
+    inertia: 0.05
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.49
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.294
+sweep_0018:
+  description: Economic scenario for sweep_0018
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.14
+    inertia: 0.17
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.49
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.294
+sweep_0019:
+  description: Economic scenario for sweep_0019
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.14
+    inertia: 0.17
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.49
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.294
+sweep_0020:
+  description: Economic scenario for sweep_0020
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.14
+    inertia: 0.17
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.6
+    switching_threshold: 0.06
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.36
+sweep_0021:
+  description: Economic scenario for sweep_0021
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.14
+    inertia: 0.17
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.6
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.36
+sweep_0022:
+  description: Economic scenario for sweep_0022
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.14
+    inertia: 0.17
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.6
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.36
+sweep_0023:
+  description: Economic scenario for sweep_0023
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.14
+    inertia: 0.17
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.6
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.36
+sweep_0024:
+  description: Economic scenario for sweep_0024
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.14
+    inertia: 0.17
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.6
+    switching_threshold: 0.18
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.36
+sweep_0025:
+  description: Economic scenario for sweep_0025
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.14
+    inertia: 0.17
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.6
+    switching_threshold: 0.18
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.36
+sweep_0026:
+  description: Economic scenario for sweep_0026
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.14
+    inertia: 0.17
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.6
+    switching_threshold: 0.18
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.36
+sweep_0027:
+  description: Economic scenario for sweep_0027
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.14
+    inertia: 0.17
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.8
+    switching_threshold: 0.06
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.4
+sweep_0028:
+  description: Economic scenario for sweep_0028
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.14
+    inertia: 0.17
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.8
+    switching_threshold: 0.06
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.4
+sweep_0029:
+  description: Economic scenario for sweep_0029
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.14
+    inertia: 0.17
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.8
+    switching_threshold: 0.06
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.4
+sweep_0030:
+  description: Economic scenario for sweep_0030
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.14
+    inertia: 0.17
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.8
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.4
+sweep_0031:
+  description: Economic scenario for sweep_0031
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.14
+    inertia: 0.17
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.8
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.4
+sweep_0032:
+  description: Economic scenario for sweep_0032
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.14
+    inertia: 0.17
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.8
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.4
+sweep_0033:
+  description: Economic scenario for sweep_0033
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.14
+    inertia: 0.17
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.8
+    switching_threshold: 0.18
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.4
+sweep_0034:
+  description: Economic scenario for sweep_0034
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.14
+    inertia: 0.17
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.8
+    switching_threshold: 0.18
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.4
+sweep_0035:
+  description: Economic scenario for sweep_0035
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.14
+    inertia: 0.17
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.8
+    switching_threshold: 0.18
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.4
+sweep_0036:
+  description: Economic scenario for sweep_0036
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.14
+    inertia: 0.17
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.49
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.294
+sweep_0037:
+  description: Economic scenario for sweep_0037
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.14
+    inertia: 0.17
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.49
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.294
+sweep_0038:
+  description: Economic scenario for sweep_0038
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.14
+    inertia: 0.17
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.49
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.294
+sweep_0039:
+  description: Economic scenario for sweep_0039
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.14
+    inertia: 0.17
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.49
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.294
+sweep_0040:
+  description: Economic scenario for sweep_0040
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.14
+    inertia: 0.17
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.49
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.294
+sweep_0041:
+  description: Economic scenario for sweep_0041
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.14
+    inertia: 0.17
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.49
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.294
+sweep_0042:
+  description: Economic scenario for sweep_0042
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.14
+    inertia: 0.17
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.49
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.294
+sweep_0043:
+  description: Economic scenario for sweep_0043
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.14
+    inertia: 0.17
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.49
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.294
+sweep_0044:
+  description: Economic scenario for sweep_0044
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.4
+    switching_threshold: 0.14
+    inertia: 0.17
+    switching_cooldown: 300
+    max_loss_pct: 0.2
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.49
+    switching_threshold: 0.12
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.294
+sweep_0045:
+  description: Economic scenario for sweep_0045
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.569
+    switching_threshold: 0.197
+    inertia: 0.094
+    switching_cooldown: 300
+    max_loss_pct: 0.284
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.663
+    switching_threshold: 0.168
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.398
+sweep_0046:
+  description: Economic scenario for sweep_0046
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.287
+    switching_threshold: 0.053
+    inertia: 0.281
+    switching_cooldown: 300
+    max_loss_pct: 0.143
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.866
+    switching_threshold: 0.178
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.4
+sweep_0047:
+  description: Economic scenario for sweep_0047
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.707
+    switching_threshold: 0.203
+    inertia: 0.153
+    switching_cooldown: 300
+    max_loss_pct: 0.3
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.402
+    switching_threshold: 0.122
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.241
+sweep_0048:
+  description: Economic scenario for sweep_0048
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.644
+    switching_threshold: 0.099
+    inertia: 0.123
+    switching_cooldown: 300
+    max_loss_pct: 0.3
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.426
+    switching_threshold: 0.051
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.256
+sweep_0049:
+  description: Economic scenario for sweep_0049
+  economic_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.035
+    switching_threshold: 0.134
+    inertia: 0.249
+    switching_cooldown: 300
+    max_loss_pct: 0.018
+  user_defaults:
+    fork_preference: neutral
+    ideology_strength: 0.462
+    switching_threshold: 0.1
+    inertia: 0.05
+    switching_cooldown: 600
+    max_loss_pct: 0.277
