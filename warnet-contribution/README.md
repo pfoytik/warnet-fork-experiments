@@ -28,13 +28,21 @@ difficulty drive the decision. Price is set by the economic weight parameter.
 
 ---
 
+## PR Target (bitcoin-dev-tools/warnet)
+
+| This file | Goes to |
+|---|---|
+| `fork_partition.py` | `resources/scenarios/contrib/fork_partition.py` |
+| `network_example.yaml` | `examples/networks/fork_partition/network.yaml` |
+| `pool_config_example.yaml` | `examples/networks/fork_partition/pool_config_example.yaml` |
+
 ## Files
 
 | File | Purpose |
 |---|---|
-| `fork_partition.py` | Self-contained scenario script |
+| `fork_partition.py` | Self-contained scenario — no external dependencies beyond Commander |
 | `network_example.yaml` | 8-node network: 4 × bitcoin 27.0 (Fork A) + 4 × bitcoin 26.0 (Fork B) |
-| `pool_config_example.yaml` | Example pool configuration with Foundry committed to Fork A |
+| `pool_config_example.yaml` | Example pool ideology config with Foundry committed to Fork A |
 | `README.md` | This file |
 
 ---
@@ -51,9 +59,9 @@ warnet deploy network_example.yaml --namespace my-fork
 warnet status --namespace my-fork
 ```
 
-The network is already partitioned: Fork A nodes (`node-0000` to `node-0003`,
-bitcoin 27.0) only connect to each other, and Fork B nodes (`node-0004` to
-`node-0007`, bitcoin 26.0) only connect to each other.
+The network is already partitioned: Fork A nodes (`tank-0001` to `tank-0004`,
+bitcoin 27.0) only connect to each other, and Fork B nodes (`tank-0005` to
+`tank-0008`, bitcoin 26.0) only connect to each other.
 
 ### Step 2 — Run the scenario
 

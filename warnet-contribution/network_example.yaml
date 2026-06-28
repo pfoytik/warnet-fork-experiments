@@ -1,110 +1,84 @@
-# Example network for fork_partition.py
+# Fork Partition Network — example for fork_partition.py
 #
-# 8 nodes split into two isolated partitions:
-#   Fork A (nodes 0–3): running bitcoin 27.0  ← new consensus rules
-#   Fork B (nodes 4–7): running bitcoin 26.0  ← old consensus rules
+# 8 nodes split into two pre-partitioned islands:
+#   Fork A (tank-0001 – tank-0004): bitcoin 27.0  ← new consensus rules
+#   Fork B (tank-0005 – tank-0008): bitcoin 26.0  ← old consensus rules
 #
-# addnode connections are intra-partition only — each side forms its own
-# P2P island. fork_partition.py will disconnect any cross-partition
-# connections that form at startup, but starting already-partitioned
-# is cleaner.
+# addnode entries are intra-partition only. The scenario auto-detects
+# which partition each node belongs to via its subversion string.
 #
-# To use a different Bitcoin version pair, change the image tags and
-# pass matching --fork-a-version / --fork-b-version to the scenario:
-#
-#   warnet deploy network_example.yaml --namespace my-fork
+# To model a different version pair, change the image tags and pass:
 #   warnet run fork_partition.py --fork-a-version "28." --fork-b-version "27."
-#
-# Minimum viable network: 2 nodes per fork (1 Fork A + 1 Fork B).
-# More nodes give the mining loop more variety but don't change the
-# economic outcome — pool decisions are simulated in Python, not
-# per-node.
 
 caddy:
   enabled: true
-fork_observer:
-  enabled: false
 
 nodes:
 
-# =============================================================================
-# FORK A PARTITION  —  bitcoin 27.0  (new consensus rules)
-# =============================================================================
+  # --- Fork A (bitcoin 27.0) ---
 
-- name: node-0000
-  image:
-    tag: '27.0'
-  bitcoin_config:
-    maxconnections: 25
-    txindex: 1
-  addnode:
-    - node-0001
-    - node-0002
+  - name: tank-0001
+    image:
+      tag: "27.0"
+    config: uacomment=fork-a
+    addnode:
+      - tank-0002
+      - tank-0003
 
-- name: node-0001
-  image:
-    tag: '27.0'
-  bitcoin_config:
-    maxconnections: 25
-  addnode:
-    - node-0000
-    - node-0003
+  - name: tank-0002
+    image:
+      tag: "27.0"
+    config: uacomment=fork-a
+    addnode:
+      - tank-0001
+      - tank-0004
 
-- name: node-0002
-  image:
-    tag: '27.0'
-  bitcoin_config:
-    maxconnections: 25
-  addnode:
-    - node-0000
-    - node-0003
+  - name: tank-0003
+    image:
+      tag: "27.0"
+    config: uacomment=fork-a
+    addnode:
+      - tank-0001
+      - tank-0004
 
-- name: node-0003
-  image:
-    tag: '27.0'
-  bitcoin_config:
-    maxconnections: 25
-  addnode:
-    - node-0001
-    - node-0002
+  - name: tank-0004
+    image:
+      tag: "27.0"
+    config: uacomment=fork-a
+    addnode:
+      - tank-0002
+      - tank-0003
 
-# =============================================================================
-# FORK B PARTITION  —  bitcoin 26.0  (old consensus rules)
-# =============================================================================
+  # --- Fork B (bitcoin 26.0) ---
 
-- name: node-0004
-  image:
-    tag: '26.0'
-  bitcoin_config:
-    maxconnections: 25
-    txindex: 1
-  addnode:
-    - node-0005
-    - node-0006
+  - name: tank-0005
+    image:
+      tag: "26.0"
+    config: uacomment=fork-b
+    addnode:
+      - tank-0006
+      - tank-0007
 
-- name: node-0005
-  image:
-    tag: '26.0'
-  bitcoin_config:
-    maxconnections: 25
-  addnode:
-    - node-0004
-    - node-0007
+  - name: tank-0006
+    image:
+      tag: "26.0"
+    config: uacomment=fork-b
+    addnode:
+      - tank-0005
+      - tank-0008
 
-- name: node-0006
-  image:
-    tag: '26.0'
-  bitcoin_config:
-    maxconnections: 25
-  addnode:
-    - node-0004
-    - node-0007
+  - name: tank-0007
+    image:
+      tag: "26.0"
+    config: uacomment=fork-b
+    addnode:
+      - tank-0005
+      - tank-0008
 
-- name: node-0007
-  image:
-    tag: '26.0'
-  bitcoin_config:
-    maxconnections: 25
-  addnode:
-    - node-0005
-    - node-0006
+  - name: tank-0008
+    image:
+      tag: "26.0"
+    config: uacomment=fork-b
+    addnode:
+      - tank-0006
+      - tank-0007
