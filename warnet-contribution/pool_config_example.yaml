@@ -1,0 +1,78 @@
+# Pool configuration example for fork_partition.py
+# Pass with: warnet run fork_partition.py --pool-config pool_config_example.yaml
+#
+# ideology: fork_a (committed to new rules) | fork_b (committed to old rules) | neutral
+# hashrate_pct: percent of total Bitcoin network hashrate
+# max_loss_pct: switch forks when losing more than this fraction of profit
+# initial_fork: which fork the pool starts on (defaults to ideology)
+
+pools:
+  - id: foundryusa
+    name: Foundry USA
+    hashrate_pct: 26.89
+    ideology: fork_a        # committed to new rules
+    max_loss_pct: 0.26
+    initial_fork: fork_a
+
+  - id: antpool
+    name: AntPool
+    hashrate_pct: 19.25
+    ideology: fork_b        # committed to old rules
+    max_loss_pct: 0.26
+    initial_fork: fork_b
+
+  - id: viabtc
+    name: ViaBTC
+    hashrate_pct: 11.39
+    ideology: neutral       # profit-driven, starts on fork_b
+    max_loss_pct: 0.05
+    initial_fork: fork_b
+
+  - id: f2pool
+    name: F2Pool
+    hashrate_pct: 11.25
+    ideology: neutral
+    max_loss_pct: 0.05
+    initial_fork: fork_b
+
+  - id: binancepool
+    name: Binance Pool
+    hashrate_pct: 10.04
+    ideology: neutral
+    max_loss_pct: 0.05
+    initial_fork: fork_b
+
+  - id: marapool
+    name: MARA Pool
+    hashrate_pct: 8.25
+    ideology: neutral
+    max_loss_pct: 0.05
+    initial_fork: fork_b
+
+  - id: sbicrypto
+    name: SBI Crypto
+    hashrate_pct: 4.57
+    ideology: neutral
+    max_loss_pct: 0.05
+    initial_fork: fork_b
+
+  - id: luxor
+    name: Luxor
+    hashrate_pct: 3.94
+    ideology: neutral
+    max_loss_pct: 0.05
+    initial_fork: fork_b
+
+  - id: ocean
+    name: OCEAN
+    hashrate_pct: 1.42
+    ideology: neutral
+    max_loss_pct: 0.05
+    initial_fork: fork_b
+
+  - id: braiins
+    name: Braiins Pool
+    hashrate_pct: 1.37
+    ideology: neutral
+    max_loss_pct: 0.05
+    initial_fork: fork_b
